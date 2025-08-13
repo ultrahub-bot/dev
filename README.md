@@ -19,8 +19,6 @@
   - Uso eficiente de consumíveis (*potions*, *elixirs*, *tonics*, *scrolls*, *foods*).
   - Dungeons e *hardfarms*.
 
----
-
 ## Site de Guias
 
 O UltraHub possui um site oficial com todo o conteúdo organizado:
