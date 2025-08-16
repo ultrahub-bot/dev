@@ -1,0 +1,44 @@
+{
+  "version": 7,
+  "backups": [
+    {
+      "name": "SHOP MILTONIUS",
+      "messages": [
+        {
+          "data": {
+            "content": null,
+            "embeds": [
+              {
+                "title": "Miltonius Arts Shop",
+                "color": 6345206,
+                "fields": [
+                  {
+                    "name": "Shop",
+                    "value": "More details about this item:"
+                  },
+                  {
+                    "name": "`Drone`  - <:Crystal_of_Miltonius:899082330910625803> 1500",
+                    "value": "_“What’re you wearing? I like it!”_\n\n**`👤 CHARACTER DETAILS                                       `**\n🔹 **Rank:** D\n🔹 **Max Level:** 25\n🔹 **Type:** Support/Ranged\n🔹 **Rarity:** Common\n🔺 **Likes:** Akumi, what you're wearing, and sarcasm.\n🔻 **Dislikes:** Other drones, being hit, and giant bugs.\n\n**`📚 ABOUT                                                   `**\nA sarcastic and snarky robot that accomponies Akumi during her missions and calculates the damage costs that Akumi usually inflicts. Drone is capable of free thought, just like his many other versions, and possesses an in-depth metric of bounty hunters, bounties, and hot spots for dangerous creatures, people, and cities within the Hex Realms.\n\n**`🧡 SUPPORT                                                 `**\n<:Nitro:899069648308404284> [Support Miltonius Arts](https://patreon.com/miltoniusarts \"Support Miltonius and get early access to Akumi Wars.\") right now and get early exclusive content in Discord and early access to Akumi Wars game."
+                  },
+                  {
+                    "name": "te",
+                    "value": "[(?)](http://#.com \"Every character has its own bounty hunter rank. It affects the price.\")"
+                  }
+                ],
+                "thumbnail": {
+                  "url": "https://images-ext-2.discordapp.net/external/6Q9qpoBDiSwl2gJfSOf0FilfC907n1vicZbptDr1NU4/https/cdn-longterm.mee6.xyz/plugins/economy/images/571237622345891850/abc6f4c560dd6b5f1da625f8e5f6b2bc06a968dcfdb7a316c1384507e57c1fea.png?width=473&height=473"
+                }
+              }
+            ]
+          },
+          "reference": ""
+        }
+      ],
+      "targets": [
+        {
+          "url": "https://discord.com/api/webhooks/899020537915904062/9LWHt2olXdZmN8MgbC4zirDs4UBxDgQthhy--lcpQatHFfoxffDtvRWc4TnPt0gkcyJK"
+        }
+      ]
+    }
+  ]
+}

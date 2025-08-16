@@ -1,0 +1,935 @@
+[
+    {
+        "name": "1",
+        "classes": [
+            "Lord of Order",
+            "Legion Revenant",
+            "Shaman",
+            "Archpaladin"
+        ],
+        "recommended_setup": {
+            "Lord of Order": {
+                "items": [],
+                "enhancements": {
+                    "weapon": "Awe Blast / Arcana's Concerto",
+                    "helm": "Luck / Forge / Wizard / Healer",
+                    "cape": "Penitence / Wizard / Luck / Healer",
+                    "class": ""
+                }
+            },
+            "Legion Revenant": {
+                "items": [],
+                "enhancements": {
+                    "weapon": "Arcana's Concerto / Ravenous / Valiance / Praxis / Awe Blast",
+                    "helm": "Wizard/forge",
+                    "cape": "Vainglory / Penitence / Wizard / Luck",
+                    "class": ""
+                }
+            },
+            "Shaman": {
+                "items": [],
+                "enhancements": {
+                    "weapon": "Elysium",
+                    "helm": "Pneuma / Wizard",
+                    "cape": "Vainglory / Penitence / Wizard / Healer",
+                    "class": ""
+                }
+            },
+            "Archpaladin": {
+                "items": [],
+                "enhancements": {
+                    "weapon": "Ravenous / Smite / Praxis / Spiral Carve",
+                    "helm": "Forge / Luck",
+                    "cape": "Lament / Penitence / Luck / Hybrid",
+                    "class": ""
+                }
+            }
+        },
+        "author": "Jix",
+        "dtCreated": 1745366308.712158,
+        "dtUpdated": 1745366308.712158,
+        "difficulty": "Unknown",
+        "strategy": "",
+        "video_url": "",
+        "thumbnail_url": ""
+    },
+    {
+        "name": "10",
+        "classes": [
+            "Lord of Order",
+            "Legion Revenant",
+            "Dragon of Time",
+            "Dragon of Time"
+        ],
+        "recommended_setup": {
+            "Lord of Order": {
+                "items": [],
+                "enhancements": {
+                    "weapon": "Awe Blast / Arcana's Concerto",
+                    "helm": "Luck / Forge / Wizard / Healer",
+                    "cape": "Penitence / Wizard / Luck / Healer",
+                    "class": ""
+                }
+            },
+            "Legion Revenant": {
+                "items": [],
+                "enhancements": {
+                    "weapon": "Arcana's Concerto / Ravenous / Valiance / Praxis / Awe Blast",
+                    "helm": "Wizard/forge",
+                    "cape": "Vainglory / Penitence / Wizard / Luck",
+                    "class": ""
+                }
+            },
+            "Dragon of Time": {
+                "items": [],
+                "enhancements": {
+                    "weapon": "Elysium / Valiance / Awe Blast / Mana Vamp",
+                    "helm": "Pneuma / Wizard / Healer",
+                    "cape": "Vainglory / Forge / Penitence / Wizard / Healer",
+                    "class": ""
+                }
+            }
+        },
+        "author": "Jix",
+        "dtCreated": 1745366308.716861,
+        "dtUpdated": 1745366308.716861,
+        "difficulty": "Unknown",
+        "strategy": "",
+        "video_url": "",
+        "thumbnail_url": ""
+    },
+    {
+        "name": "2",
+        "classes": [
+            "Lord of Order",
+            "Legion Revenant",
+            "Quantum Chronomancer",
+            "Archpaladin"
+        ],
+        "recommended_setup": {
+            "Lord of Order": {
+                "items": [],
+                "enhancements": {
+                    "weapon": "Awe Blast / Arcana's Concerto",
+                    "helm": "Luck / Forge / Wizard / Healer",
+                    "cape": "Penitence / Wizard / Luck / Healer",
+                    "class": ""
+                }
+            },
+            "Legion Revenant": {
+                "items": [],
+                "enhancements": {
+                    "weapon": "Arcana's Concerto / Ravenous / Valiance / Praxis / Awe Blast",
+                    "helm": "Wizard/forge",
+                    "cape": "Vainglory / Penitence / Wizard / Luck",
+                    "class": ""
+                }
+            },
+            "Quantum Chronomancer": {
+                "items": [],
+                "enhancements": {
+                    "weapon": "Praxis / Valiance / Ravenous / Smite / Awe Blast / Health Vamp",
+                    "helm": "Forge / Luck",
+                    "cape": "Lament / Vainglory / Penitence",
+                    "class": ""
+                }
+            },
+            "Archpaladin": {
+                "items": [],
+                "enhancements": {
+                    "weapon": "Ravenous / Smite / Praxis / Spiral Carve",
+                    "helm": "Forge / Luck",
+                    "cape": "Lament / Penitence / Luck / Hybrid",
+                    "class": ""
+                }
+            }
+        },
+        "author": "Jix",
+        "dtCreated": 1745366308.722402,
+        "dtUpdated": 1745366308.722402,
+        "difficulty": "Unknown",
+        "strategy": "",
+        "video_url": "",
+        "thumbnail_url": ""
+    },
+    {
+        "name": "11",
+        "classes": [
+            "Lord of Order",
+            "Legion Revenant",
+            "Dragon of Time"
+        ],
+        "recommended_setup": {
+            "Lord of Order": {
+                "items": [],
+                "enhancements": {
+                    "weapon": "Awe Blast / Arcana's Concerto",
+                    "helm": "Luck / Forge / Wizard / Healer",
+                    "cape": "Penitence / Wizard / Luck / Healer",
+                    "class": ""
+                }
+            },
+            "Legion Revenant": {
+                "items": [],
+                "enhancements": {
+                    "weapon": "Arcana's Concerto / Ravenous / Valiance / Praxis / Awe Blast",
+                    "helm": "Wizard/forge",
+                    "cape": "Vainglory / Penitence / Wizard / Luck",
+                    "class": ""
+                }
+            },
+            "Dragon of Time": {
+                "items": [],
+                "enhancements": {
+                    "weapon": "Elysium / Valiance / Awe Blast / Mana Vamp",
+                    "helm": "Pneuma / Wizard / Healer",
+                    "cape": "Vainglory / Forge / Penitence / Wizard / Healer",
+                    "class": ""
+                }
+            }
+        },
+        "author": "Jix",
+        "dtCreated": 1745366308.725966,
+        "dtUpdated": 1745366308.725966,
+        "difficulty": "Unknown",
+        "strategy": "",
+        "video_url": "",
+        "thumbnail_url": ""
+    },
+    {
+        "name": "3",
+        "classes": [
+            "Lord of Order",
+            "Legion Revenant",
+            "Dragon of Time",
+            "Archpaladin"
+        ],
+        "recommended_setup": {
+            "Lord of Order": {
+                "items": [],
+                "enhancements": {
+                    "weapon": "Awe Blast / Arcana's Concerto",
+                    "helm": "Luck / Forge / Wizard / Healer",
+                    "cape": "Penitence / Wizard / Luck / Healer",
+                    "class": ""
+                }
+            },
+            "Legion Revenant": {
+                "items": [],
+                "enhancements": {
+                    "weapon": "Arcana's Concerto / Ravenous / Valiance / Praxis / Awe Blast",
+                    "helm": "Wizard/forge",
+                    "cape": "Vainglory / Penitence / Wizard / Luck",
+                    "class": ""
+                }
+            },
+            "Dragon of Time": {
+                "items": [],
+                "enhancements": {
+                    "weapon": "Elysium / Valiance / Awe Blast / Mana Vamp",
+                    "helm": "Pneuma / Wizard / Healer",
+                    "cape": "Vainglory / Forge / Penitence / Wizard / Healer",
+                    "class": ""
+                }
+            },
+            "Archpaladin": {
+                "items": [],
+                "enhancements": {
+                    "weapon": "Ravenous / Smite / Praxis / Spiral Carve",
+                    "helm": "Forge / Luck",
+                    "cape": "Lament / Penitence / Luck / Hybrid",
+                    "class": ""
+                }
+            }
+        },
+        "author": "Jix",
+        "dtCreated": 1745366308.731661,
+        "dtUpdated": 1745366308.731661,
+        "difficulty": "Unknown",
+        "strategy": "",
+        "video_url": "",
+        "thumbnail_url": ""
+    },
+    {
+        "name": "12",
+        "classes": [
+            "Lord of Order",
+            "Legion Revenant",
+            "Dragon of Time",
+            "Verus Doomknight"
+        ],
+        "recommended_setup": {
+            "Lord of Order": {
+                "items": [],
+                "enhancements": {
+                    "weapon": "Awe Blast / Arcana's Concerto",
+                    "helm": "Luck / Forge / Wizard / Healer",
+                    "cape": "Penitence / Wizard / Luck / Healer",
+                    "class": ""
+                }
+            },
+            "Legion Revenant": {
+                "items": [],
+                "enhancements": {
+                    "weapon": "Arcana's Concerto / Ravenous / Valiance / Praxis / Awe Blast",
+                    "helm": "Wizard/forge",
+                    "cape": "Vainglory / Penitence / Wizard / Luck",
+                    "class": ""
+                }
+            },
+            "Dragon of Time": {
+                "items": [],
+                "enhancements": {
+                    "weapon": "Elysium / Valiance / Awe Blast / Mana Vamp",
+                    "helm": "Pneuma / Wizard / Healer",
+                    "cape": "Vainglory / Forge / Penitence / Wizard / Healer",
+                    "class": ""
+                }
+            },
+            "Verus Doomknight": {
+                "items": [],
+                "enhancements": {
+                    "weapon": "Ravenous / Dauntless / Valiance / Spiral Carve",
+                    "helm": "Anima / Forge / Luck",
+                    "cape": "Vainglory / Forge / Luck",
+                    "class": ""
+                }
+            }
+        },
+        "author": "Jix",
+        "dtCreated": 1745366308.737735,
+        "dtUpdated": 1745366308.737735,
+        "difficulty": "Unknown",
+        "strategy": "",
+        "video_url": "",
+        "thumbnail_url": ""
+    },
+    {
+        "name": "4",
+        "classes": [
+            "Lord of Order",
+            "Legion Revenant",
+            "Archpaladin"
+        ],
+        "recommended_setup": {
+            "Lord of Order": {
+                "items": [],
+                "enhancements": {
+                    "weapon": "Awe Blast / Arcana's Concerto",
+                    "helm": "Luck / Forge / Wizard / Healer",
+                    "cape": "Penitence / Wizard / Luck / Healer",
+                    "class": ""
+                }
+            },
+            "Legion Revenant": {
+                "items": [],
+                "enhancements": {
+                    "weapon": "Arcana's Concerto / Ravenous / Valiance / Praxis / Awe Blast",
+                    "helm": "Wizard/forge",
+                    "cape": "Vainglory / Penitence / Wizard / Luck",
+                    "class": ""
+                }
+            },
+            "Archpaladin": {
+                "items": [],
+                "enhancements": {
+                    "weapon": "Ravenous / Smite / Praxis / Spiral Carve",
+                    "helm": "Forge / Luck",
+                    "cape": "Lament / Penitence / Luck / Hybrid",
+                    "class": ""
+                }
+            }
+        },
+        "author": "Jix",
+        "dtCreated": 1745366308.740773,
+        "dtUpdated": 1745366308.740773,
+        "difficulty": "Unknown",
+        "strategy": "",
+        "video_url": "",
+        "thumbnail_url": ""
+    },
+    {
+        "name": "13",
+        "classes": [
+            "Lord of Order",
+            "Legion Revenant",
+            "Dragon of Time",
+            "Necrotic Chronomancer"
+        ],
+        "recommended_setup": {
+            "Lord of Order": {
+                "items": [],
+                "enhancements": {
+                    "weapon": "Awe Blast / Arcana's Concerto",
+                    "helm": "Luck / Forge / Wizard / Healer",
+                    "cape": "Penitence / Wizard / Luck / Healer",
+                    "class": ""
+                }
+            },
+            "Legion Revenant": {
+                "items": [],
+                "enhancements": {
+                    "weapon": "Arcana's Concerto / Ravenous / Valiance / Praxis / Awe Blast",
+                    "helm": "Wizard/forge",
+                    "cape": "Vainglory / Penitence / Wizard / Luck",
+                    "class": ""
+                }
+            },
+            "Dragon of Time": {
+                "items": [],
+                "enhancements": {
+                    "weapon": "Elysium / Valiance / Awe Blast / Mana Vamp",
+                    "helm": "Pneuma / Wizard / Healer",
+                    "cape": "Vainglory / Forge / Penitence / Wizard / Healer",
+                    "class": ""
+                }
+            },
+            "Necrotic Chronomancer": {
+                "items": [],
+                "enhancements": {
+                    "weapon": "Dauntless / Valiance / Arcana's Concerto / Awe Blast / Health Vamp",
+                    "helm": "Forge / Anima / Luck",
+                    "cape": "Vainglory / Penitence / Forge / Luck",
+                    "class": ""
+                }
+            }
+        },
+        "author": "Jix",
+        "dtCreated": 1745366308.744485,
+        "dtUpdated": 1745366308.744485,
+        "difficulty": "Unknown",
+        "strategy": "",
+        "video_url": "",
+        "thumbnail_url": ""
+    },
+    {
+        "name": "5",
+        "classes": [
+            "Lord of Order",
+            "Legion Revenant",
+            "Void Highlord",
+            "Archpaladin"
+        ],
+        "recommended_setup": {
+            "Lord of Order": {
+                "items": [],
+                "enhancements": {
+                    "weapon": "Awe Blast / Arcana's Concerto",
+                    "helm": "Luck / Forge / Wizard / Healer",
+                    "cape": "Penitence / Wizard / Luck / Healer",
+                    "class": ""
+                }
+            },
+            "Legion Revenant": {
+                "items": [],
+                "enhancements": {
+                    "weapon": "Arcana's Concerto / Ravenous / Valiance / Praxis / Awe Blast",
+                    "helm": "Wizard/forge",
+                    "cape": "Vainglory / Penitence / Wizard / Luck",
+                    "class": ""
+                }
+            },
+            "Void Highlord": {
+                "items": [],
+                "enhancements": {
+                    "weapon": "Ravenous / Dauntless / Valiance / Spiral Carve",
+                    "helm": "Anima / Forge / Luck",
+                    "cape": "Vainglory / Lament / Penitence / Forge / Luck",
+                    "class": ""
+                }
+            },
+            "Archpaladin": {
+                "items": [],
+                "enhancements": {
+                    "weapon": "Ravenous / Smite / Praxis / Spiral Carve",
+                    "helm": "Forge / Luck",
+                    "cape": "Lament / Penitence / Luck / Hybrid",
+                    "class": ""
+                }
+            }
+        },
+        "author": "Jix",
+        "dtCreated": 1745366308.748856,
+        "dtUpdated": 1745366308.748856,
+        "difficulty": "Unknown",
+        "strategy": "",
+        "video_url": "",
+        "thumbnail_url": ""
+    },
+    {
+        "name": "14",
+        "classes": [
+            "Lord of Order",
+            "Legion Revenant",
+            "Dragon of Time",
+            "Quantum Chronomancer"
+        ],
+        "recommended_setup": {
+            "Lord of Order": {
+                "items": [],
+                "enhancements": {
+                    "weapon": "Awe Blast / Arcana's Concerto",
+                    "helm": "Luck / Forge / Wizard / Healer",
+                    "cape": "Penitence / Wizard / Luck / Healer",
+                    "class": ""
+                }
+            },
+            "Legion Revenant": {
+                "items": [],
+                "enhancements": {
+                    "weapon": "Arcana's Concerto / Ravenous / Valiance / Praxis / Awe Blast",
+                    "helm": "Wizard/forge",
+                    "cape": "Vainglory / Penitence / Wizard / Luck",
+                    "class": ""
+                }
+            },
+            "Dragon of Time": {
+                "items": [],
+                "enhancements": {
+                    "weapon": "Elysium / Valiance / Awe Blast / Mana Vamp",
+                    "helm": "Pneuma / Wizard / Healer",
+                    "cape": "Vainglory / Forge / Penitence / Wizard / Healer",
+                    "class": ""
+                }
+            },
+            "Quantum Chronomancer": {
+                "items": [],
+                "enhancements": {
+                    "weapon": "Praxis / Valiance / Ravenous / Smite / Awe Blast / Health Vamp",
+                    "helm": "Forge / Luck",
+                    "cape": "Lament / Vainglory / Penitence",
+                    "class": ""
+                }
+            }
+        },
+        "author": "Jix",
+        "dtCreated": 1745366308.753565,
+        "dtUpdated": 1745366308.753565,
+        "difficulty": "Unknown",
+        "strategy": "",
+        "video_url": "",
+        "thumbnail_url": ""
+    },
+    {
+        "name": "6",
+        "classes": [
+            "Lord of Order",
+            "Legion Revenant",
+            "Sentinel",
+            "Archpaladin"
+        ],
+        "recommended_setup": {
+            "Lord of Order": {
+                "items": [],
+                "enhancements": {
+                    "weapon": "Awe Blast / Arcana's Concerto",
+                    "helm": "Luck / Forge / Wizard / Healer",
+                    "cape": "Penitence / Wizard / Luck / Healer",
+                    "class": ""
+                }
+            },
+            "Legion Revenant": {
+                "items": [],
+                "enhancements": {
+                    "weapon": "Arcana's Concerto / Ravenous / Valiance / Praxis / Awe Blast",
+                    "helm": "Wizard/forge",
+                    "cape": "Vainglory / Penitence / Wizard / Luck",
+                    "class": ""
+                }
+            },
+            "Sentinel": {
+                "items": [],
+                "enhancements": {
+                    "weapon": "Ravenous / Dauntless",
+                    "helm": "Forge / Luck",
+                    "cape": "Vainglory / Penitence / Luck",
+                    "class": ""
+                }
+            },
+            "Archpaladin": {
+                "items": [],
+                "enhancements": {
+                    "weapon": "Ravenous / Smite / Praxis / Spiral Carve",
+                    "helm": "Forge / Luck",
+                    "cape": "Lament / Penitence / Luck / Hybrid",
+                    "class": ""
+                }
+            }
+        },
+        "author": "Jix",
+        "dtCreated": 1745366308.758335,
+        "dtUpdated": 1745366308.758335,
+        "difficulty": "Unknown",
+        "strategy": "",
+        "video_url": "",
+        "thumbnail_url": ""
+    },
+    {
+        "name": "15",
+        "classes": [
+            "Lord of Order",
+            "Legion Revenant",
+            "Archfiend",
+            "Necrotic Chronomancer"
+        ],
+        "recommended_setup": {
+            "Lord of Order": {
+                "items": [],
+                "enhancements": {
+                    "weapon": "Awe Blast / Arcana's Concerto",
+                    "helm": "Luck / Forge / Wizard / Healer",
+                    "cape": "Penitence / Wizard / Luck / Healer",
+                    "class": ""
+                }
+            },
+            "Legion Revenant": {
+                "items": [],
+                "enhancements": {
+                    "weapon": "Arcana's Concerto / Ravenous / Valiance / Praxis / Awe Blast",
+                    "helm": "Wizard/forge",
+                    "cape": "Vainglory / Penitence / Wizard / Luck",
+                    "class": ""
+                }
+            },
+            "Archfiend": {
+                "items": [],
+                "enhancements": {
+                    "weapon": "Dauntless / Arcana's Concerto / Awe Blast",
+                    "helm": "Forge / Anima",
+                    "cape": "Vainglory / Penitence",
+                    "class": ""
+                }
+            },
+            "Necrotic Chronomancer": {
+                "items": [],
+                "enhancements": {
+                    "weapon": "Dauntless / Valiance / Arcana's Concerto / Awe Blast / Health Vamp",
+                    "helm": "Forge / Anima / Luck",
+                    "cape": "Vainglory / Penitence / Forge / Luck",
+                    "class": ""
+                }
+            }
+        },
+        "author": "Jix",
+        "dtCreated": 1745366308.762607,
+        "dtUpdated": 1745366308.762607,
+        "difficulty": "Unknown",
+        "strategy": "",
+        "video_url": "",
+        "thumbnail_url": ""
+    },
+    {
+        "name": "7",
+        "classes": [
+            "Lord of Order",
+            "Legion Revenant",
+            "Verus Doomknight",
+            "Archpaladin"
+        ],
+        "recommended_setup": {
+            "Lord of Order": {
+                "items": [],
+                "enhancements": {
+                    "weapon": "Awe Blast / Arcana's Concerto",
+                    "helm": "Luck / Forge / Wizard / Healer",
+                    "cape": "Penitence / Wizard / Luck / Healer",
+                    "class": ""
+                }
+            },
+            "Legion Revenant": {
+                "items": [],
+                "enhancements": {
+                    "weapon": "Arcana's Concerto / Ravenous / Valiance / Praxis / Awe Blast",
+                    "helm": "Wizard/forge",
+                    "cape": "Vainglory / Penitence / Wizard / Luck",
+                    "class": ""
+                }
+            },
+            "Verus Doomknight": {
+                "items": [],
+                "enhancements": {
+                    "weapon": "Ravenous / Dauntless / Valiance / Spiral Carve",
+                    "helm": "Anima / Forge / Luck",
+                    "cape": "Vainglory / Forge / Luck",
+                    "class": ""
+                }
+            },
+            "Archpaladin": {
+                "items": [],
+                "enhancements": {
+                    "weapon": "Ravenous / Smite / Praxis / Spiral Carve",
+                    "helm": "Forge / Luck",
+                    "cape": "Lament / Penitence / Luck / Hybrid",
+                    "class": ""
+                }
+            }
+        },
+        "author": "Jix",
+        "dtCreated": 1745366308.766384,
+        "dtUpdated": 1745366308.766384,
+        "difficulty": "Unknown",
+        "strategy": "",
+        "video_url": "",
+        "thumbnail_url": ""
+    },
+    {
+        "name": "16",
+        "classes": [
+            "Lord of Order",
+            "Legion Revenant",
+            "Archfiend",
+            "Archpaladin"
+        ],
+        "recommended_setup": {
+            "Lord of Order": {
+                "items": [],
+                "enhancements": {
+                    "weapon": "Awe Blast / Arcana's Concerto",
+                    "helm": "Luck / Forge / Wizard / Healer",
+                    "cape": "Penitence / Wizard / Luck / Healer",
+                    "class": ""
+                }
+            },
+            "Legion Revenant": {
+                "items": [],
+                "enhancements": {
+                    "weapon": "Arcana's Concerto / Ravenous / Valiance / Praxis / Awe Blast",
+                    "helm": "Wizard/forge",
+                    "cape": "Vainglory / Penitence / Wizard / Luck",
+                    "class": ""
+                }
+            },
+            "Archfiend": {
+                "items": [],
+                "enhancements": {
+                    "weapon": "Dauntless / Arcana's Concerto / Awe Blast",
+                    "helm": "Forge / Anima",
+                    "cape": "Vainglory / Penitence",
+                    "class": ""
+                }
+            },
+            "Archpaladin": {
+                "items": [],
+                "enhancements": {
+                    "weapon": "Ravenous / Smite / Praxis / Spiral Carve",
+                    "helm": "Forge / Luck",
+                    "cape": "Lament / Penitence / Luck / Hybrid",
+                    "class": ""
+                }
+            }
+        },
+        "author": "Jix",
+        "dtCreated": 1745366308.771439,
+        "dtUpdated": 1745366308.771439,
+        "difficulty": "Unknown",
+        "strategy": "",
+        "video_url": "",
+        "thumbnail_url": ""
+    },
+    {
+        "name": "8",
+        "classes": [
+            "Lord of Order",
+            "Legion Revenant",
+            "Necrotic Chronomancer",
+            "Archpaladin"
+        ],
+        "recommended_setup": {
+            "Lord of Order": {
+                "items": [],
+                "enhancements": {
+                    "weapon": "Awe Blast / Arcana's Concerto",
+                    "helm": "Luck / Forge / Wizard / Healer",
+                    "cape": "Penitence / Wizard / Luck / Healer",
+                    "class": ""
+                }
+            },
+            "Legion Revenant": {
+                "items": [],
+                "enhancements": {
+                    "weapon": "Arcana's Concerto / Ravenous / Valiance / Praxis / Awe Blast",
+                    "helm": "Wizard/forge",
+                    "cape": "Vainglory / Penitence / Wizard / Luck",
+                    "class": ""
+                }
+            },
+            "Necrotic Chronomancer": {
+                "items": [],
+                "enhancements": {
+                    "weapon": "Dauntless / Valiance / Arcana's Concerto / Awe Blast / Health Vamp",
+                    "helm": "Forge / Anima / Luck",
+                    "cape": "Vainglory / Penitence / Forge / Luck",
+                    "class": ""
+                }
+            },
+            "Archpaladin": {
+                "items": [],
+                "enhancements": {
+                    "weapon": "Ravenous / Smite / Praxis / Spiral Carve",
+                    "helm": "Forge / Luck",
+                    "cape": "Lament / Penitence / Luck / Hybrid",
+                    "class": ""
+                }
+            }
+        },
+        "author": "Jix",
+        "dtCreated": 1745366308.776259,
+        "dtUpdated": 1745366308.776259,
+        "difficulty": "Unknown",
+        "strategy": "",
+        "video_url": "",
+        "thumbnail_url": ""
+    },
+    {
+        "name": "17",
+        "classes": [
+            "Lord of Order",
+            "Legion Revenant",
+            "Archfiend",
+            "Chaos Avenger"
+        ],
+        "recommended_setup": {
+            "Lord of Order": {
+                "items": [],
+                "enhancements": {
+                    "weapon": "Awe Blast / Arcana's Concerto",
+                    "helm": "Luck / Forge / Wizard / Healer",
+                    "cape": "Penitence / Wizard / Luck / Healer",
+                    "class": ""
+                }
+            },
+            "Legion Revenant": {
+                "items": [],
+                "enhancements": {
+                    "weapon": "Arcana's Concerto / Ravenous / Valiance / Praxis / Awe Blast",
+                    "helm": "Wizard/forge",
+                    "cape": "Vainglory / Penitence / Wizard / Luck",
+                    "class": ""
+                }
+            },
+            "Archfiend": {
+                "items": [],
+                "enhancements": {
+                    "weapon": "Dauntless / Arcana's Concerto / Awe Blast",
+                    "helm": "Forge / Anima",
+                    "cape": "Vainglory / Penitence",
+                    "class": ""
+                }
+            },
+            "Chaos Avenger": {
+                "items": [],
+                "enhancements": {
+                    "weapon": "Ravenous / Dauntless / Valiance / Awe Blast",
+                    "helm": "Anima / Forge / Luck",
+                    "cape": "Vainglory / Penitence / Luck",
+                    "class": ""
+                }
+            }
+        },
+        "author": "Jix",
+        "dtCreated": 1745366308.779346,
+        "dtUpdated": 1745366308.779346,
+        "difficulty": "Unknown",
+        "strategy": "",
+        "video_url": "",
+        "thumbnail_url": ""
+    },
+    {
+        "name": "9",
+        "classes": [
+            "Lord of Order",
+            "Legion Revenant",
+            "Arcana Invoker",
+            "Archpaladin"
+        ],
+        "recommended_setup": {
+            "Lord of Order": {
+                "items": [],
+                "enhancements": {
+                    "weapon": "Awe Blast / Arcana's Concerto",
+                    "helm": "Luck / Forge / Wizard / Healer",
+                    "cape": "Penitence / Wizard / Luck / Healer",
+                    "class": ""
+                }
+            },
+            "Legion Revenant": {
+                "items": [],
+                "enhancements": {
+                    "weapon": "Arcana's Concerto / Ravenous / Valiance / Praxis / Awe Blast",
+                    "helm": "Wizard/forge",
+                    "cape": "Vainglory / Penitence / Wizard / Luck",
+                    "class": ""
+                }
+            },
+            "Arcana Invoker": {
+                "items": [],
+                "enhancements": {
+                    "weapon": "Ravenous / Elysium",
+                    "helm": "Forge / Wizard / Pneuma",
+                    "cape": "Vainglory / Lament / Luck / Wizard",
+                    "class": ""
+                }
+            },
+            "Archpaladin": {
+                "items": [],
+                "enhancements": {
+                    "weapon": "Ravenous / Smite / Praxis / Spiral Carve",
+                    "helm": "Forge / Luck",
+                    "cape": "Lament / Penitence / Luck / Hybrid",
+                    "class": ""
+                }
+            }
+        },
+        "author": "Jix",
+        "dtCreated": 1745366308.783578,
+        "dtUpdated": 1745366308.783578,
+        "difficulty": "Unknown",
+        "strategy": "",
+        "video_url": "",
+        "thumbnail_url": ""
+    },
+    {
+        "name": "18",
+        "classes": [
+            "Lord of Order",
+            "Legion Revenant",
+            "Archfiend"
+        ],
+        "recommended_setup": {
+            "Lord of Order": {
+                "items": [],
+                "enhancements": {
+                    "weapon": "Awe Blast / Arcana's Concerto",
+                    "helm": "Luck / Forge / Wizard / Healer",
+                    "cape": "Penitence / Wizard / Luck / Healer",
+                    "class": ""
+                }
+            },
+            "Legion Revenant": {
+                "items": [],
+                "enhancements": {
+                    "weapon": "Arcana's Concerto / Ravenous / Valiance / Praxis / Awe Blast",
+                    "helm": "Wizard/forge",
+                    "cape": "Vainglory / Penitence / Wizard / Luck",
+                    "class": ""
+                }
+            },
+            "Archfiend": {
+                "items": [],
+                "enhancements": {
+                    "weapon": "Dauntless / Arcana's Concerto / Awe Blast",
+                    "helm": "Forge / Anima",
+                    "cape": "Vainglory / Penitence",
+                    "class": ""
+                }
+            }
+        },
+        "author": "Jix",
+        "dtCreated": 1745366308.788913,
+        "dtUpdated": 1745366308.788913,
+        "difficulty": "Unknown",
+        "strategy": "",
+        "video_url": "",
+        "thumbnail_url": ""
+    }
+]

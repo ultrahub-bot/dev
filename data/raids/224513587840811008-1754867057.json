@@ -1,0 +1,21 @@
+{
+    "boss": "Champion Drakath",
+    "comp": "Meta",
+    "creator": 224513587840811008,
+    "status": "recruiting",
+    "party_size": 4,
+    "members": {
+        "224513587840811008": "Chaos Avenger",
+        "1006253792574050324": "Legion Revenant"
+    },
+    "available_classes": [
+        "Archpaladin",
+        "Lord of Order",
+        "Obsidian Paladin Chronomancer",
+        "Stonecrusher"
+    ],
+    "message_id": 1404238998804762727,
+    "strategy": "Modo META - escolha qualquer classe das composi\u00e7\u00f5es dispon\u00edveis.",
+    "created_at": 1754867057.8947544,
+    "thread_id": 1404238998804762727
+}

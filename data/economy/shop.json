@@ -1,0 +1,38 @@
+[
+    {
+        "name": "Watch",
+        "price": 100,
+        "description": "Time",
+        "urlfoto": "https://example.com/watch.png",
+        "rarity": "Common",
+        "roleGive": [],
+        "roleRequired": [],
+        "roleWithdraw": [],
+        "aqwItemRequired": [],
+        "aqwBadgeRequired": []
+    },
+    {
+        "name": "Bagre",
+        "price": 100,
+        "description": "Apenas aqueles que tem o set completo do bagre podem comprar isto.",
+        "urlfoto": "https://example.com/watch.png",
+        "rarity": "Common",
+        "roleGive": [],
+        "roleRequired": [],
+        "roleWithdraw": [],
+        "aqwItemRequired": ["Shark Bait's Armor","Rippled Bone Sword","Unidentified 2","Dwakel Banner"],
+        "aqwBadgeRequired": []
+    },    
+    {
+        "name": "Amulet of Thorns",
+        "price": 50,
+        "description": "Protege contra ladrões e espeta quem tenta te roubar.",
+        "urlfoto": "https://example.com/watch.png",
+        "rarity": "Rare",
+        "roleGive": [],
+        "roleRequired": ["1361222701259296778"],
+        "roleWithdraw": [],
+        "aqwItemRequired": [],
+        "aqwBadgeRequired": []
+      }      
+]

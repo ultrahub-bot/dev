@@ -1,0 +1,2 @@
+1. Execute:			venv\Scripts\activate.bat
+2. Depois execute o servidor: 	python main.py

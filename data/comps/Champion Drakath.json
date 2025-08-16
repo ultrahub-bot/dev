@@ -1,0 +1,2324 @@
+[
+    {
+        "name": "Comp Lord",
+        "classes": [
+            "Lord of Order",
+            "Legion Revenant",
+            "Archpaladin",
+            "Quantum Chronomancer"
+        ],
+        "recommended_setup": {
+            "Lord of Order": {
+                "items": [],
+                "enhancements": {
+                    "weapon": "Awe Blast / Arcana's Concerto",
+                    "helm": "Luck / Forge / Wizard / Healer",
+                    "cape": "Penitence / Wizard / Luck / Healer",
+                    "class": ""
+                }
+            },
+            "Legion Revenant": {
+                "items": [],
+                "enhancements": {
+                    "weapon": "Arcana's Concerto / Ravenous / Valiance / Praxis / Awe Blast",
+                    "helm": "Wizard/forge",
+                    "cape": "Vainglory / Penitence / Wizard / Luck",
+                    "class": ""
+                }
+            },
+            "Archpaladin": {
+                "items": [],
+                "enhancements": {
+                    "weapon": "Ravenous / Smite / Praxis / Spiral Carve",
+                    "helm": "Forge / Luck",
+                    "cape": "Lament / Penitence / Luck / Hybrid",
+                    "class": ""
+                }
+            },
+            "Quantum Chronomancer": {
+                "items": [],
+                "enhancements": {
+                    "weapon": "Praxis / Valiance / Ravenous / Smite / Awe Blast / Health Vamp",
+                    "helm": "Forge / Luck",
+                    "cape": "Lament / Vainglory / Penitence",
+                    "class": ""
+                }
+            }
+        },
+        "author": "Jix",
+        "dtCreated": 1745366309.091268,
+        "dtUpdated": 1745366309.091268,
+        "difficulty": "Unknown",
+        "strategy": "",
+        "video_url": "",
+        "thumbnail_url": ""
+    },
+    {
+        "name": "Comp Stone",
+        "classes": [
+            "Stonecrusher",
+            "Legion Revenant",
+            "Archpaladin",
+            "Quantum Chronomancer"
+        ],
+        "recommended_setup": {
+            "Stonecrusher": {
+                "items": [],
+                "enhancements": {
+                    "weapon": "Valiance / Praxis / Awe Blast",
+                    "helm": "Forge / Wizard / Healer / Fighter",
+                    "cape": "Absolution / Wizard / Healer / Fighter",
+                    "class": ""
+                }
+            },
+            "Legion Revenant": {
+                "items": [],
+                "enhancements": {
+                    "weapon": "Arcana's Concerto / Ravenous / Valiance / Praxis / Awe Blast",
+                    "helm": "Wizard/forge",
+                    "cape": "Vainglory / Penitence / Wizard / Luck",
+                    "class": ""
+                }
+            },
+            "Archpaladin": {
+                "items": [],
+                "enhancements": {
+                    "weapon": "Ravenous / Smite / Praxis / Spiral Carve",
+                    "helm": "Forge / Luck",
+                    "cape": "Lament / Penitence / Luck / Hybrid",
+                    "class": ""
+                }
+            },
+            "Quantum Chronomancer": {
+                "items": [],
+                "enhancements": {
+                    "weapon": "Praxis / Valiance / Ravenous / Smite / Awe Blast / Health Vamp",
+                    "helm": "Forge / Luck",
+                    "cape": "Lament / Vainglory / Penitence",
+                    "class": ""
+                }
+            }
+        },
+        "author": "Jix",
+        "dtCreated": 1745366309.095153,
+        "dtUpdated": 1745366309.095153,
+        "difficulty": "Unknown",
+        "strategy": "",
+        "video_url": "",
+        "thumbnail_url": ""
+    },
+    {
+        "name": "Full Sup",
+        "classes": [
+            "Stonecrusher",
+            "Lord of Order",
+            "Archpaladin",
+            "Chaos Avenger"
+        ],
+        "recommended_setup": {
+            "Stonecrusher": {
+                "items": [],
+                "enhancements": {
+                    "weapon": "Valiance / Praxis / Awe Blast",
+                    "helm": "Forge / Wizard / Healer / Fighter",
+                    "cape": "Absolution / Wizard / Healer / Fighter",
+                    "class": ""
+                }
+            },
+            "Lord of Order": {
+                "items": [],
+                "enhancements": {
+                    "weapon": "Awe Blast / Arcana's Concerto",
+                    "helm": "Luck / Forge / Wizard / Healer",
+                    "cape": "Penitence / Wizard / Luck / Healer",
+                    "class": ""
+                }
+            },
+            "Archpaladin": {
+                "items": [],
+                "enhancements": {
+                    "weapon": "Ravenous / Smite / Praxis / Spiral Carve",
+                    "helm": "Forge / Luck",
+                    "cape": "Lament / Penitence / Luck / Hybrid",
+                    "class": ""
+                }
+            },
+            "Chaos Avenger": {
+                "items": [],
+                "enhancements": {
+                    "weapon": "Ravenous / Dauntless / Valiance / Awe Blast",
+                    "helm": "Anima / Forge / Luck",
+                    "cape": "Vainglory / Penitence / Luck",
+                    "class": ""
+                }
+            }
+        },
+        "author": "Jix",
+        "dtCreated": 1745366309.099784,
+        "dtUpdated": 1745366309.099784,
+        "difficulty": "Unknown",
+        "strategy": "",
+        "video_url": "",
+        "thumbnail_url": ""
+    },
+    {
+        "name": "Comp Lord 1",
+        "classes": [
+            "Lord of Order",
+            "Legion Revenant",
+            "Archpaladin",
+            "Dragon of Time"
+        ],
+        "recommended_setup": {
+            "Lord of Order": {
+                "items": [],
+                "enhancements": {
+                    "weapon": "Awe Blast / Arcana's Concerto",
+                    "helm": "Luck / Forge / Wizard / Healer",
+                    "cape": "Penitence / Wizard / Luck / Healer",
+                    "class": ""
+                }
+            },
+            "Legion Revenant": {
+                "items": [],
+                "enhancements": {
+                    "weapon": "Arcana's Concerto / Ravenous / Valiance / Praxis / Awe Blast",
+                    "helm": "Wizard/forge",
+                    "cape": "Vainglory / Penitence / Wizard / Luck",
+                    "class": ""
+                }
+            },
+            "Archpaladin": {
+                "items": [],
+                "enhancements": {
+                    "weapon": "Ravenous / Smite / Praxis / Spiral Carve",
+                    "helm": "Forge / Luck",
+                    "cape": "Lament / Penitence / Luck / Hybrid",
+                    "class": ""
+                }
+            },
+            "Dragon of Time": {
+                "items": [],
+                "enhancements": {
+                    "weapon": "Elysium / Valiance / Awe Blast / Mana Vamp",
+                    "helm": "Pneuma / Wizard / Healer",
+                    "cape": "Vainglory / Forge / Penitence / Wizard / Healer",
+                    "class": ""
+                }
+            }
+        },
+        "author": "Jix",
+        "dtCreated": 1745366309.104366,
+        "dtUpdated": 1745366309.104366,
+        "difficulty": "Unknown",
+        "strategy": "",
+        "video_url": "",
+        "thumbnail_url": ""
+    },
+    {
+        "name": "Comp Stone 1",
+        "classes": [
+            "Stonecrusher",
+            "Legion Revenant",
+            "Archpaladin",
+            "Dragon of Time"
+        ],
+        "recommended_setup": {
+            "Stonecrusher": {
+                "items": [],
+                "enhancements": {
+                    "weapon": "Valiance / Praxis / Awe Blast",
+                    "helm": "Forge / Wizard / Healer / Fighter",
+                    "cape": "Absolution / Wizard / Healer / Fighter",
+                    "class": ""
+                }
+            },
+            "Legion Revenant": {
+                "items": [],
+                "enhancements": {
+                    "weapon": "Arcana's Concerto / Ravenous / Valiance / Praxis / Awe Blast",
+                    "helm": "Wizard/forge",
+                    "cape": "Vainglory / Penitence / Wizard / Luck",
+                    "class": ""
+                }
+            },
+            "Archpaladin": {
+                "items": [],
+                "enhancements": {
+                    "weapon": "Ravenous / Smite / Praxis / Spiral Carve",
+                    "helm": "Forge / Luck",
+                    "cape": "Lament / Penitence / Luck / Hybrid",
+                    "class": ""
+                }
+            },
+            "Dragon of Time": {
+                "items": [],
+                "enhancements": {
+                    "weapon": "Elysium / Valiance / Awe Blast / Mana Vamp",
+                    "helm": "Pneuma / Wizard / Healer",
+                    "cape": "Vainglory / Forge / Penitence / Wizard / Healer",
+                    "class": ""
+                }
+            }
+        },
+        "author": "Jix",
+        "dtCreated": 1745366309.108387,
+        "dtUpdated": 1745366309.108387,
+        "difficulty": "Unknown",
+        "strategy": "",
+        "video_url": "",
+        "thumbnail_url": ""
+    },
+    {
+        "name": "Full Sup 1",
+        "classes": [
+            "Stonecrusher",
+            "Lord of Order",
+            "Obsidian Paladin Chronomancer",
+            "Chaos Avenger"
+        ],
+        "recommended_setup": {
+            "Stonecrusher": {
+                "items": [],
+                "enhancements": {
+                    "weapon": "Valiance / Praxis / Awe Blast",
+                    "helm": "Forge / Wizard / Healer / Fighter",
+                    "cape": "Absolution / Wizard / Healer / Fighter",
+                    "class": ""
+                }
+            },
+            "Lord of Order": {
+                "items": [],
+                "enhancements": {
+                    "weapon": "Awe Blast / Arcana's Concerto",
+                    "helm": "Luck / Forge / Wizard / Healer",
+                    "cape": "Penitence / Wizard / Luck / Healer",
+                    "class": ""
+                }
+            },
+            "Obsidian Paladin Chronomancer": {
+                "items": [],
+                "enhancements": {
+                    "weapon": "Ravenous / Praxis / Awe Blast",
+                    "helm": "Healer / Wizard",
+                    "cape": "Vainglory / Healer / Wizard",
+                    "class": ""
+                }
+            },
+            "Chaos Avenger": {
+                "items": [],
+                "enhancements": {
+                    "weapon": "Ravenous / Dauntless / Valiance / Awe Blast",
+                    "helm": "Anima / Forge / Luck",
+                    "cape": "Vainglory / Penitence / Luck",
+                    "class": ""
+                }
+            }
+        },
+        "author": "Jix",
+        "dtCreated": 1745366309.112477,
+        "dtUpdated": 1745366309.112477,
+        "difficulty": "Unknown",
+        "strategy": "",
+        "video_url": "",
+        "thumbnail_url": ""
+    },
+    {
+        "name": "Comp Lord 2",
+        "classes": [
+            "Lord of Order",
+            "Legion Revenant",
+            "Obsidian Paladin Chronomancer",
+            "Quantum Chronomancer"
+        ],
+        "recommended_setup": {
+            "Lord of Order": {
+                "items": [],
+                "enhancements": {
+                    "weapon": "Awe Blast / Arcana's Concerto",
+                    "helm": "Luck / Forge / Wizard / Healer",
+                    "cape": "Penitence / Wizard / Luck / Healer",
+                    "class": ""
+                }
+            },
+            "Legion Revenant": {
+                "items": [],
+                "enhancements": {
+                    "weapon": "Arcana's Concerto / Ravenous / Valiance / Praxis / Awe Blast",
+                    "helm": "Wizard/forge",
+                    "cape": "Vainglory / Penitence / Wizard / Luck",
+                    "class": ""
+                }
+            },
+            "Obsidian Paladin Chronomancer": {
+                "items": [],
+                "enhancements": {
+                    "weapon": "Ravenous / Praxis / Awe Blast",
+                    "helm": "Healer / Wizard",
+                    "cape": "Vainglory / Healer / Wizard",
+                    "class": ""
+                }
+            },
+            "Quantum Chronomancer": {
+                "items": [],
+                "enhancements": {
+                    "weapon": "Praxis / Valiance / Ravenous / Smite / Awe Blast / Health Vamp",
+                    "helm": "Forge / Luck",
+                    "cape": "Lament / Vainglory / Penitence",
+                    "class": ""
+                }
+            }
+        },
+        "author": "Jix",
+        "dtCreated": 1745366309.115834,
+        "dtUpdated": 1745366309.115834,
+        "difficulty": "Unknown",
+        "strategy": "",
+        "video_url": "",
+        "thumbnail_url": ""
+    },
+    {
+        "name": "Comp Stone 2",
+        "classes": [
+            "Stonecrusher",
+            "Legion Revenant",
+            "Obsidian Paladin Chronomancer",
+            "Dragon of Time"
+        ],
+        "recommended_setup": {
+            "Stonecrusher": {
+                "items": [],
+                "enhancements": {
+                    "weapon": "Valiance / Praxis / Awe Blast",
+                    "helm": "Forge / Wizard / Healer / Fighter",
+                    "cape": "Absolution / Wizard / Healer / Fighter",
+                    "class": ""
+                }
+            },
+            "Legion Revenant": {
+                "items": [],
+                "enhancements": {
+                    "weapon": "Arcana's Concerto / Ravenous / Valiance / Praxis / Awe Blast",
+                    "helm": "Wizard/forge",
+                    "cape": "Vainglory / Penitence / Wizard / Luck",
+                    "class": ""
+                }
+            },
+            "Obsidian Paladin Chronomancer": {
+                "items": [],
+                "enhancements": {
+                    "weapon": "Ravenous / Praxis / Awe Blast",
+                    "helm": "Healer / Wizard",
+                    "cape": "Vainglory / Healer / Wizard",
+                    "class": ""
+                }
+            },
+            "Dragon of Time": {
+                "items": [],
+                "enhancements": {
+                    "weapon": "Elysium / Valiance / Awe Blast / Mana Vamp",
+                    "helm": "Pneuma / Wizard / Healer",
+                    "cape": "Vainglory / Forge / Penitence / Wizard / Healer",
+                    "class": ""
+                }
+            }
+        },
+        "author": "Jix",
+        "dtCreated": 1745366309.120385,
+        "dtUpdated": 1745366309.120385,
+        "difficulty": "Unknown",
+        "strategy": "",
+        "video_url": "",
+        "thumbnail_url": ""
+    },
+    {
+        "name": "Full Sup 2",
+        "classes": [
+            "Stonecrusher",
+            "Lord of Order",
+            "Obsidian Paladin Chronomancer",
+            "Shaman"
+        ],
+        "recommended_setup": {
+            "Stonecrusher": {
+                "items": [],
+                "enhancements": {
+                    "weapon": "Valiance / Praxis / Awe Blast",
+                    "helm": "Forge / Wizard / Healer / Fighter",
+                    "cape": "Absolution / Wizard / Healer / Fighter",
+                    "class": ""
+                }
+            },
+            "Lord of Order": {
+                "items": [],
+                "enhancements": {
+                    "weapon": "Awe Blast / Arcana's Concerto",
+                    "helm": "Luck / Forge / Wizard / Healer",
+                    "cape": "Penitence / Wizard / Luck / Healer",
+                    "class": ""
+                }
+            },
+            "Obsidian Paladin Chronomancer": {
+                "items": [],
+                "enhancements": {
+                    "weapon": "Ravenous / Praxis / Awe Blast",
+                    "helm": "Healer / Wizard",
+                    "cape": "Vainglory / Healer / Wizard",
+                    "class": ""
+                }
+            },
+            "Shaman": {
+                "items": [],
+                "enhancements": {
+                    "weapon": "Elysium",
+                    "helm": "Pneuma / Wizard",
+                    "cape": "Vainglory / Penitence / Wizard / Healer",
+                    "class": ""
+                }
+            }
+        },
+        "author": "Jix",
+        "dtCreated": 1745366309.124828,
+        "dtUpdated": 1745366309.124828,
+        "difficulty": "Unknown",
+        "strategy": "",
+        "video_url": "",
+        "thumbnail_url": ""
+    },
+    {
+        "name": "Comp Lord 3",
+        "classes": [
+            "Lord of Order",
+            "Legion Revenant",
+            "Obsidian Paladin Chronomancer",
+            "Dragon of Time"
+        ],
+        "recommended_setup": {
+            "Lord of Order": {
+                "items": [],
+                "enhancements": {
+                    "weapon": "Awe Blast / Arcana's Concerto",
+                    "helm": "Luck / Forge / Wizard / Healer",
+                    "cape": "Penitence / Wizard / Luck / Healer",
+                    "class": ""
+                }
+            },
+            "Legion Revenant": {
+                "items": [],
+                "enhancements": {
+                    "weapon": "Arcana's Concerto / Ravenous / Valiance / Praxis / Awe Blast",
+                    "helm": "Wizard/forge",
+                    "cape": "Vainglory / Penitence / Wizard / Luck",
+                    "class": ""
+                }
+            },
+            "Obsidian Paladin Chronomancer": {
+                "items": [],
+                "enhancements": {
+                    "weapon": "Ravenous / Praxis / Awe Blast",
+                    "helm": "Healer / Wizard",
+                    "cape": "Vainglory / Healer / Wizard",
+                    "class": ""
+                }
+            },
+            "Dragon of Time": {
+                "items": [],
+                "enhancements": {
+                    "weapon": "Elysium / Valiance / Awe Blast / Mana Vamp",
+                    "helm": "Pneuma / Wizard / Healer",
+                    "cape": "Vainglory / Forge / Penitence / Wizard / Healer",
+                    "class": ""
+                }
+            }
+        },
+        "author": "Jix",
+        "dtCreated": 1745366309.128938,
+        "dtUpdated": 1745366309.128938,
+        "difficulty": "Unknown",
+        "strategy": "",
+        "video_url": "",
+        "thumbnail_url": ""
+    },
+    {
+        "name": "Comp Stone 3",
+        "classes": [
+            "Stonecrusher",
+            "Legion Revenant",
+            "Obsidian Paladin Chronomancer",
+            "Void Highlord"
+        ],
+        "recommended_setup": {
+            "Stonecrusher": {
+                "items": [],
+                "enhancements": {
+                    "weapon": "Valiance / Praxis / Awe Blast",
+                    "helm": "Forge / Wizard / Healer / Fighter",
+                    "cape": "Absolution / Wizard / Healer / Fighter",
+                    "class": ""
+                }
+            },
+            "Legion Revenant": {
+                "items": [],
+                "enhancements": {
+                    "weapon": "Arcana's Concerto / Ravenous / Valiance / Praxis / Awe Blast",
+                    "helm": "Wizard/forge",
+                    "cape": "Vainglory / Penitence / Wizard / Luck",
+                    "class": ""
+                }
+            },
+            "Obsidian Paladin Chronomancer": {
+                "items": [],
+                "enhancements": {
+                    "weapon": "Ravenous / Praxis / Awe Blast",
+                    "helm": "Healer / Wizard",
+                    "cape": "Vainglory / Healer / Wizard",
+                    "class": ""
+                }
+            },
+            "Void Highlord": {
+                "items": [],
+                "enhancements": {
+                    "weapon": "Ravenous / Dauntless / Valiance / Spiral Carve",
+                    "helm": "Anima / Forge / Luck",
+                    "cape": "Vainglory / Lament / Penitence / Forge / Luck",
+                    "class": ""
+                }
+            }
+        },
+        "author": "Jix",
+        "dtCreated": 1745366309.132883,
+        "dtUpdated": 1745366309.132883,
+        "difficulty": "Unknown",
+        "strategy": "",
+        "video_url": "",
+        "thumbnail_url": ""
+    },
+    {
+        "name": "Full Sup 3",
+        "classes": [
+            "Stonecrusher",
+            "Lord of Order",
+            "Archpaladin",
+            "Quantum Chronomancer"
+        ],
+        "recommended_setup": {
+            "Stonecrusher": {
+                "items": [],
+                "enhancements": {
+                    "weapon": "Valiance / Praxis / Awe Blast",
+                    "helm": "Forge / Wizard / Healer / Fighter",
+                    "cape": "Absolution / Wizard / Healer / Fighter",
+                    "class": ""
+                }
+            },
+            "Lord of Order": {
+                "items": [],
+                "enhancements": {
+                    "weapon": "Awe Blast / Arcana's Concerto",
+                    "helm": "Luck / Forge / Wizard / Healer",
+                    "cape": "Penitence / Wizard / Luck / Healer",
+                    "class": ""
+                }
+            },
+            "Archpaladin": {
+                "items": [],
+                "enhancements": {
+                    "weapon": "Ravenous / Smite / Praxis / Spiral Carve",
+                    "helm": "Forge / Luck",
+                    "cape": "Lament / Penitence / Luck / Hybrid",
+                    "class": ""
+                }
+            },
+            "Quantum Chronomancer": {
+                "items": [],
+                "enhancements": {
+                    "weapon": "Praxis / Valiance / Ravenous / Smite / Awe Blast / Health Vamp",
+                    "helm": "Forge / Luck",
+                    "cape": "Lament / Vainglory / Penitence",
+                    "class": ""
+                }
+            }
+        },
+        "author": "Jix",
+        "dtCreated": 1745366309.13844,
+        "dtUpdated": 1745366309.13844,
+        "difficulty": "Unknown",
+        "strategy": "",
+        "video_url": "",
+        "thumbnail_url": ""
+    },
+    {
+        "name": "Comp Lord 4",
+        "classes": [
+            "Lord of Order",
+            "Legion Revenant",
+            "Obsidian Paladin Chronomancer",
+            "Void Highlord"
+        ],
+        "recommended_setup": {
+            "Lord of Order": {
+                "items": [],
+                "enhancements": {
+                    "weapon": "Awe Blast / Arcana's Concerto",
+                    "helm": "Luck / Forge / Wizard / Healer",
+                    "cape": "Penitence / Wizard / Luck / Healer",
+                    "class": ""
+                }
+            },
+            "Legion Revenant": {
+                "items": [],
+                "enhancements": {
+                    "weapon": "Arcana's Concerto / Ravenous / Valiance / Praxis / Awe Blast",
+                    "helm": "Wizard/forge",
+                    "cape": "Vainglory / Penitence / Wizard / Luck",
+                    "class": ""
+                }
+            },
+            "Obsidian Paladin Chronomancer": {
+                "items": [],
+                "enhancements": {
+                    "weapon": "Ravenous / Praxis / Awe Blast",
+                    "helm": "Healer / Wizard",
+                    "cape": "Vainglory / Healer / Wizard",
+                    "class": ""
+                }
+            },
+            "Void Highlord": {
+                "items": [],
+                "enhancements": {
+                    "weapon": "Ravenous / Dauntless / Valiance / Spiral Carve",
+                    "helm": "Anima / Forge / Luck",
+                    "cape": "Vainglory / Lament / Penitence / Forge / Luck",
+                    "class": ""
+                }
+            }
+        },
+        "author": "Jix",
+        "dtCreated": 1745366309.143207,
+        "dtUpdated": 1745366309.143207,
+        "difficulty": "Unknown",
+        "strategy": "",
+        "video_url": "",
+        "thumbnail_url": ""
+    },
+    {
+        "name": "Comp Stone 4",
+        "classes": [
+            "Stonecrusher",
+            "Legion Revenant",
+            "Obsidian Paladin Chronomancer",
+            "Chaos Avenger"
+        ],
+        "recommended_setup": {
+            "Stonecrusher": {
+                "items": [],
+                "enhancements": {
+                    "weapon": "Valiance / Praxis / Awe Blast",
+                    "helm": "Forge / Wizard / Healer / Fighter",
+                    "cape": "Absolution / Wizard / Healer / Fighter",
+                    "class": ""
+                }
+            },
+            "Legion Revenant": {
+                "items": [],
+                "enhancements": {
+                    "weapon": "Arcana's Concerto / Ravenous / Valiance / Praxis / Awe Blast",
+                    "helm": "Wizard/forge",
+                    "cape": "Vainglory / Penitence / Wizard / Luck",
+                    "class": ""
+                }
+            },
+            "Obsidian Paladin Chronomancer": {
+                "items": [],
+                "enhancements": {
+                    "weapon": "Ravenous / Praxis / Awe Blast",
+                    "helm": "Healer / Wizard",
+                    "cape": "Vainglory / Healer / Wizard",
+                    "class": ""
+                }
+            },
+            "Chaos Avenger": {
+                "items": [],
+                "enhancements": {
+                    "weapon": "Ravenous / Dauntless / Valiance / Awe Blast",
+                    "helm": "Anima / Forge / Luck",
+                    "cape": "Vainglory / Penitence / Luck",
+                    "class": ""
+                }
+            }
+        },
+        "author": "Jix",
+        "dtCreated": 1745366309.147477,
+        "dtUpdated": 1745366309.147477,
+        "difficulty": "Unknown",
+        "strategy": "",
+        "video_url": "",
+        "thumbnail_url": ""
+    },
+    {
+        "name": "Full Sup 4",
+        "classes": [
+            "Stonecrusher",
+            "Lord of Order",
+            "Obsidian Paladin Chronomancer",
+            "Quantum Chronomancer"
+        ],
+        "recommended_setup": {
+            "Stonecrusher": {
+                "items": [],
+                "enhancements": {
+                    "weapon": "Valiance / Praxis / Awe Blast",
+                    "helm": "Forge / Wizard / Healer / Fighter",
+                    "cape": "Absolution / Wizard / Healer / Fighter",
+                    "class": ""
+                }
+            },
+            "Lord of Order": {
+                "items": [],
+                "enhancements": {
+                    "weapon": "Awe Blast / Arcana's Concerto",
+                    "helm": "Luck / Forge / Wizard / Healer",
+                    "cape": "Penitence / Wizard / Luck / Healer",
+                    "class": ""
+                }
+            },
+            "Obsidian Paladin Chronomancer": {
+                "items": [],
+                "enhancements": {
+                    "weapon": "Ravenous / Praxis / Awe Blast",
+                    "helm": "Healer / Wizard",
+                    "cape": "Vainglory / Healer / Wizard",
+                    "class": ""
+                }
+            },
+            "Quantum Chronomancer": {
+                "items": [],
+                "enhancements": {
+                    "weapon": "Praxis / Valiance / Ravenous / Smite / Awe Blast / Health Vamp",
+                    "helm": "Forge / Luck",
+                    "cape": "Lament / Vainglory / Penitence",
+                    "class": ""
+                }
+            }
+        },
+        "author": "Jix",
+        "dtCreated": 1745366309.152815,
+        "dtUpdated": 1745366309.152815,
+        "difficulty": "Unknown",
+        "strategy": "",
+        "video_url": "",
+        "thumbnail_url": ""
+    },
+    {
+        "name": "Comp Lord 5",
+        "classes": [
+            "Lord of Order",
+            "Legion Revenant",
+            "Obsidian Paladin Chronomancer",
+            "Chaos Avenger"
+        ],
+        "recommended_setup": {
+            "Lord of Order": {
+                "items": [],
+                "enhancements": {
+                    "weapon": "Awe Blast / Arcana's Concerto",
+                    "helm": "Luck / Forge / Wizard / Healer",
+                    "cape": "Penitence / Wizard / Luck / Healer",
+                    "class": ""
+                }
+            },
+            "Legion Revenant": {
+                "items": [],
+                "enhancements": {
+                    "weapon": "Arcana's Concerto / Ravenous / Valiance / Praxis / Awe Blast",
+                    "helm": "Wizard/forge",
+                    "cape": "Vainglory / Penitence / Wizard / Luck",
+                    "class": ""
+                }
+            },
+            "Obsidian Paladin Chronomancer": {
+                "items": [],
+                "enhancements": {
+                    "weapon": "Ravenous / Praxis / Awe Blast",
+                    "helm": "Healer / Wizard",
+                    "cape": "Vainglory / Healer / Wizard",
+                    "class": ""
+                }
+            },
+            "Chaos Avenger": {
+                "items": [],
+                "enhancements": {
+                    "weapon": "Ravenous / Dauntless / Valiance / Awe Blast",
+                    "helm": "Anima / Forge / Luck",
+                    "cape": "Vainglory / Penitence / Luck",
+                    "class": ""
+                }
+            }
+        },
+        "author": "Jix",
+        "dtCreated": 1745366309.156953,
+        "dtUpdated": 1745366309.156953,
+        "difficulty": "Unknown",
+        "strategy": "",
+        "video_url": "",
+        "thumbnail_url": ""
+    },
+    {
+        "name": "Comp Stone 5",
+        "classes": [
+            "Stonecrusher",
+            "Legion Revenant",
+            "Archpaladin",
+            "Verus Doomknight"
+        ],
+        "recommended_setup": {
+            "Stonecrusher": {
+                "items": [],
+                "enhancements": {
+                    "weapon": "Valiance / Praxis / Awe Blast",
+                    "helm": "Forge / Wizard / Healer / Fighter",
+                    "cape": "Absolution / Wizard / Healer / Fighter",
+                    "class": ""
+                }
+            },
+            "Legion Revenant": {
+                "items": [],
+                "enhancements": {
+                    "weapon": "Arcana's Concerto / Ravenous / Valiance / Praxis / Awe Blast",
+                    "helm": "Wizard/forge",
+                    "cape": "Vainglory / Penitence / Wizard / Luck",
+                    "class": ""
+                }
+            },
+            "Archpaladin": {
+                "items": [],
+                "enhancements": {
+                    "weapon": "Ravenous / Smite / Praxis / Spiral Carve",
+                    "helm": "Forge / Luck",
+                    "cape": "Lament / Penitence / Luck / Hybrid",
+                    "class": ""
+                }
+            },
+            "Verus Doomknight": {
+                "items": [],
+                "enhancements": {
+                    "weapon": "Ravenous / Dauntless / Valiance / Spiral Carve",
+                    "helm": "Anima / Forge / Luck",
+                    "cape": "Vainglory / Forge / Luck",
+                    "class": ""
+                }
+            }
+        },
+        "author": "Jix",
+        "dtCreated": 1745366309.161289,
+        "dtUpdated": 1745366309.161289,
+        "difficulty": "Unknown",
+        "strategy": "",
+        "video_url": "",
+        "thumbnail_url": ""
+    },
+    {
+        "name": "Full Sup 5",
+        "classes": [
+            "Stonecrusher",
+            "Lord of Order",
+            "Archpaladin",
+            "Void Highlord"
+        ],
+        "recommended_setup": {
+            "Stonecrusher": {
+                "items": [],
+                "enhancements": {
+                    "weapon": "Valiance / Praxis / Awe Blast",
+                    "helm": "Forge / Wizard / Healer / Fighter",
+                    "cape": "Absolution / Wizard / Healer / Fighter",
+                    "class": ""
+                }
+            },
+            "Lord of Order": {
+                "items": [],
+                "enhancements": {
+                    "weapon": "Awe Blast / Arcana's Concerto",
+                    "helm": "Luck / Forge / Wizard / Healer",
+                    "cape": "Penitence / Wizard / Luck / Healer",
+                    "class": ""
+                }
+            },
+            "Archpaladin": {
+                "items": [],
+                "enhancements": {
+                    "weapon": "Ravenous / Smite / Praxis / Spiral Carve",
+                    "helm": "Forge / Luck",
+                    "cape": "Lament / Penitence / Luck / Hybrid",
+                    "class": ""
+                }
+            },
+            "Void Highlord": {
+                "items": [],
+                "enhancements": {
+                    "weapon": "Ravenous / Dauntless / Valiance / Spiral Carve",
+                    "helm": "Anima / Forge / Luck",
+                    "cape": "Vainglory / Lament / Penitence / Forge / Luck",
+                    "class": ""
+                }
+            }
+        },
+        "author": "Jix",
+        "dtCreated": 1745366309.166455,
+        "dtUpdated": 1745366309.166455,
+        "difficulty": "Unknown",
+        "strategy": "",
+        "video_url": "",
+        "thumbnail_url": ""
+    },
+    {
+        "name": "Comp Lord 6",
+        "classes": [
+            "Lord of Order",
+            "Legion Revenant",
+            "Archpaladin",
+            "Void Highlord"
+        ],
+        "recommended_setup": {
+            "Lord of Order": {
+                "items": [],
+                "enhancements": {
+                    "weapon": "Awe Blast / Arcana's Concerto",
+                    "helm": "Luck / Forge / Wizard / Healer",
+                    "cape": "Penitence / Wizard / Luck / Healer",
+                    "class": ""
+                }
+            },
+            "Legion Revenant": {
+                "items": [],
+                "enhancements": {
+                    "weapon": "Arcana's Concerto / Ravenous / Valiance / Praxis / Awe Blast",
+                    "helm": "Wizard/forge",
+                    "cape": "Vainglory / Penitence / Wizard / Luck",
+                    "class": ""
+                }
+            },
+            "Archpaladin": {
+                "items": [],
+                "enhancements": {
+                    "weapon": "Ravenous / Smite / Praxis / Spiral Carve",
+                    "helm": "Forge / Luck",
+                    "cape": "Lament / Penitence / Luck / Hybrid",
+                    "class": ""
+                }
+            },
+            "Void Highlord": {
+                "items": [],
+                "enhancements": {
+                    "weapon": "Ravenous / Dauntless / Valiance / Spiral Carve",
+                    "helm": "Anima / Forge / Luck",
+                    "cape": "Vainglory / Lament / Penitence / Forge / Luck",
+                    "class": ""
+                }
+            }
+        },
+        "author": "Jix",
+        "dtCreated": 1745366309.171153,
+        "dtUpdated": 1745366309.171153,
+        "difficulty": "Unknown",
+        "strategy": "",
+        "video_url": "",
+        "thumbnail_url": ""
+    },
+    {
+        "name": "Comp Stone 6",
+        "classes": [
+            "Stonecrusher",
+            "Legion Revenant",
+            "Archpaladin",
+            "Void Highlord"
+        ],
+        "recommended_setup": {
+            "Stonecrusher": {
+                "items": [],
+                "enhancements": {
+                    "weapon": "Valiance / Praxis / Awe Blast",
+                    "helm": "Forge / Wizard / Healer / Fighter",
+                    "cape": "Absolution / Wizard / Healer / Fighter",
+                    "class": ""
+                }
+            },
+            "Legion Revenant": {
+                "items": [],
+                "enhancements": {
+                    "weapon": "Arcana's Concerto / Ravenous / Valiance / Praxis / Awe Blast",
+                    "helm": "Wizard/forge",
+                    "cape": "Vainglory / Penitence / Wizard / Luck",
+                    "class": ""
+                }
+            },
+            "Archpaladin": {
+                "items": [],
+                "enhancements": {
+                    "weapon": "Ravenous / Smite / Praxis / Spiral Carve",
+                    "helm": "Forge / Luck",
+                    "cape": "Lament / Penitence / Luck / Hybrid",
+                    "class": ""
+                }
+            },
+            "Void Highlord": {
+                "items": [],
+                "enhancements": {
+                    "weapon": "Ravenous / Dauntless / Valiance / Spiral Carve",
+                    "helm": "Anima / Forge / Luck",
+                    "cape": "Vainglory / Lament / Penitence / Forge / Luck",
+                    "class": ""
+                }
+            }
+        },
+        "author": "Jix",
+        "dtCreated": 1745366309.174522,
+        "dtUpdated": 1745366309.174522,
+        "difficulty": "Unknown",
+        "strategy": "",
+        "video_url": "",
+        "thumbnail_url": ""
+    },
+    {
+        "name": "Full Sup 6",
+        "classes": [
+            "Stonecrusher",
+            "Lord of Order",
+            "Archpaladin",
+            "Dragon of Time"
+        ],
+        "recommended_setup": {
+            "Stonecrusher": {
+                "items": [],
+                "enhancements": {
+                    "weapon": "Valiance / Praxis / Awe Blast",
+                    "helm": "Forge / Wizard / Healer / Fighter",
+                    "cape": "Absolution / Wizard / Healer / Fighter",
+                    "class": ""
+                }
+            },
+            "Lord of Order": {
+                "items": [],
+                "enhancements": {
+                    "weapon": "Awe Blast / Arcana's Concerto",
+                    "helm": "Luck / Forge / Wizard / Healer",
+                    "cape": "Penitence / Wizard / Luck / Healer",
+                    "class": ""
+                }
+            },
+            "Archpaladin": {
+                "items": [],
+                "enhancements": {
+                    "weapon": "Ravenous / Smite / Praxis / Spiral Carve",
+                    "helm": "Forge / Luck",
+                    "cape": "Lament / Penitence / Luck / Hybrid",
+                    "class": ""
+                }
+            },
+            "Dragon of Time": {
+                "items": [],
+                "enhancements": {
+                    "weapon": "Elysium / Valiance / Awe Blast / Mana Vamp",
+                    "helm": "Pneuma / Wizard / Healer",
+                    "cape": "Vainglory / Forge / Penitence / Wizard / Healer",
+                    "class": ""
+                }
+            }
+        },
+        "author": "Jix",
+        "dtCreated": 1745366309.179477,
+        "dtUpdated": 1745366309.179477,
+        "difficulty": "Unknown",
+        "strategy": "",
+        "video_url": "",
+        "thumbnail_url": ""
+    },
+    {
+        "name": "Comp Lord 7",
+        "classes": [
+            "Lord of Order",
+            "Legion Revenant",
+            "Archpaladin",
+            "Chaos Avenger"
+        ],
+        "recommended_setup": {
+            "Lord of Order": {
+                "items": [],
+                "enhancements": {
+                    "weapon": "Awe Blast / Arcana's Concerto",
+                    "helm": "Luck / Forge / Wizard / Healer",
+                    "cape": "Penitence / Wizard / Luck / Healer",
+                    "class": ""
+                }
+            },
+            "Legion Revenant": {
+                "items": [],
+                "enhancements": {
+                    "weapon": "Arcana's Concerto / Ravenous / Valiance / Praxis / Awe Blast",
+                    "helm": "Wizard/forge",
+                    "cape": "Vainglory / Penitence / Wizard / Luck",
+                    "class": ""
+                }
+            },
+            "Archpaladin": {
+                "items": [],
+                "enhancements": {
+                    "weapon": "Ravenous / Smite / Praxis / Spiral Carve",
+                    "helm": "Forge / Luck",
+                    "cape": "Lament / Penitence / Luck / Hybrid",
+                    "class": ""
+                }
+            },
+            "Chaos Avenger": {
+                "items": [],
+                "enhancements": {
+                    "weapon": "Ravenous / Dauntless / Valiance / Awe Blast",
+                    "helm": "Anima / Forge / Luck",
+                    "cape": "Vainglory / Penitence / Luck",
+                    "class": ""
+                }
+            }
+        },
+        "author": "Jix",
+        "dtCreated": 1745366309.183532,
+        "dtUpdated": 1745366309.183532,
+        "difficulty": "Unknown",
+        "strategy": "",
+        "video_url": "",
+        "thumbnail_url": ""
+    },
+    {
+        "name": "Comp Stone 7",
+        "classes": [
+            "Stonecrusher",
+            "Legion Revenant",
+            "Archpaladin",
+            "Chaos Avenger"
+        ],
+        "recommended_setup": {
+            "Stonecrusher": {
+                "items": [],
+                "enhancements": {
+                    "weapon": "Valiance / Praxis / Awe Blast",
+                    "helm": "Forge / Wizard / Healer / Fighter",
+                    "cape": "Absolution / Wizard / Healer / Fighter",
+                    "class": ""
+                }
+            },
+            "Legion Revenant": {
+                "items": [],
+                "enhancements": {
+                    "weapon": "Arcana's Concerto / Ravenous / Valiance / Praxis / Awe Blast",
+                    "helm": "Wizard/forge",
+                    "cape": "Vainglory / Penitence / Wizard / Luck",
+                    "class": ""
+                }
+            },
+            "Archpaladin": {
+                "items": [],
+                "enhancements": {
+                    "weapon": "Ravenous / Smite / Praxis / Spiral Carve",
+                    "helm": "Forge / Luck",
+                    "cape": "Lament / Penitence / Luck / Hybrid",
+                    "class": ""
+                }
+            },
+            "Chaos Avenger": {
+                "items": [],
+                "enhancements": {
+                    "weapon": "Ravenous / Dauntless / Valiance / Awe Blast",
+                    "helm": "Anima / Forge / Luck",
+                    "cape": "Vainglory / Penitence / Luck",
+                    "class": ""
+                }
+            }
+        },
+        "author": "Jix",
+        "dtCreated": 1745366309.190643,
+        "dtUpdated": 1745366309.190643,
+        "difficulty": "Unknown",
+        "strategy": "",
+        "video_url": "",
+        "thumbnail_url": ""
+    },
+    {
+        "name": "Full Sup 7",
+        "classes": [
+            "Stonecrusher",
+            "Lord of Order",
+            "Obsidian Paladin Chronomancer",
+            "Dragon of Time"
+        ],
+        "recommended_setup": {
+            "Stonecrusher": {
+                "items": [],
+                "enhancements": {
+                    "weapon": "Valiance / Praxis / Awe Blast",
+                    "helm": "Forge / Wizard / Healer / Fighter",
+                    "cape": "Absolution / Wizard / Healer / Fighter",
+                    "class": ""
+                }
+            },
+            "Lord of Order": {
+                "items": [],
+                "enhancements": {
+                    "weapon": "Awe Blast / Arcana's Concerto",
+                    "helm": "Luck / Forge / Wizard / Healer",
+                    "cape": "Penitence / Wizard / Luck / Healer",
+                    "class": ""
+                }
+            },
+            "Obsidian Paladin Chronomancer": {
+                "items": [],
+                "enhancements": {
+                    "weapon": "Ravenous / Praxis / Awe Blast",
+                    "helm": "Healer / Wizard",
+                    "cape": "Vainglory / Healer / Wizard",
+                    "class": ""
+                }
+            },
+            "Dragon of Time": {
+                "items": [],
+                "enhancements": {
+                    "weapon": "Elysium / Valiance / Awe Blast / Mana Vamp",
+                    "helm": "Pneuma / Wizard / Healer",
+                    "cape": "Vainglory / Forge / Penitence / Wizard / Healer",
+                    "class": ""
+                }
+            }
+        },
+        "author": "Jix",
+        "dtCreated": 1745366309.194452,
+        "dtUpdated": 1745366309.194452,
+        "difficulty": "Unknown",
+        "strategy": "",
+        "video_url": "",
+        "thumbnail_url": ""
+    },
+    {
+        "name": "Comp Lord 8",
+        "classes": [
+            "Lord of Order",
+            "Legion Revenant",
+            "Archpaladin",
+            "Shaman"
+        ],
+        "recommended_setup": {
+            "Lord of Order": {
+                "items": [],
+                "enhancements": {
+                    "weapon": "Awe Blast / Arcana's Concerto",
+                    "helm": "Luck / Forge / Wizard / Healer",
+                    "cape": "Penitence / Wizard / Luck / Healer",
+                    "class": ""
+                }
+            },
+            "Legion Revenant": {
+                "items": [],
+                "enhancements": {
+                    "weapon": "Arcana's Concerto / Ravenous / Valiance / Praxis / Awe Blast",
+                    "helm": "Wizard/forge",
+                    "cape": "Vainglory / Penitence / Wizard / Luck",
+                    "class": ""
+                }
+            },
+            "Archpaladin": {
+                "items": [],
+                "enhancements": {
+                    "weapon": "Ravenous / Smite / Praxis / Spiral Carve",
+                    "helm": "Forge / Luck",
+                    "cape": "Lament / Penitence / Luck / Hybrid",
+                    "class": ""
+                }
+            },
+            "Shaman": {
+                "items": [],
+                "enhancements": {
+                    "weapon": "Elysium",
+                    "helm": "Pneuma / Wizard",
+                    "cape": "Vainglory / Penitence / Wizard / Healer",
+                    "class": ""
+                }
+            }
+        },
+        "author": "Jix",
+        "dtCreated": 1745366309.199395,
+        "dtUpdated": 1745366309.199395,
+        "difficulty": "Unknown",
+        "strategy": "",
+        "video_url": "",
+        "thumbnail_url": ""
+    },
+    {
+        "name": "Comp Stone 8",
+        "classes": [
+            "Stonecrusher",
+            "Legion Revenant",
+            "Obsidian Paladin Chronomancer",
+            "Quantum Chronomancer"
+        ],
+        "recommended_setup": {
+            "Stonecrusher": {
+                "items": [],
+                "enhancements": {
+                    "weapon": "Valiance / Praxis / Awe Blast",
+                    "helm": "Forge / Wizard / Healer / Fighter",
+                    "cape": "Absolution / Wizard / Healer / Fighter",
+                    "class": ""
+                }
+            },
+            "Legion Revenant": {
+                "items": [],
+                "enhancements": {
+                    "weapon": "Arcana's Concerto / Ravenous / Valiance / Praxis / Awe Blast",
+                    "helm": "Wizard/forge",
+                    "cape": "Vainglory / Penitence / Wizard / Luck",
+                    "class": ""
+                }
+            },
+            "Obsidian Paladin Chronomancer": {
+                "items": [],
+                "enhancements": {
+                    "weapon": "Ravenous / Praxis / Awe Blast",
+                    "helm": "Healer / Wizard",
+                    "cape": "Vainglory / Healer / Wizard",
+                    "class": ""
+                }
+            },
+            "Quantum Chronomancer": {
+                "items": [],
+                "enhancements": {
+                    "weapon": "Praxis / Valiance / Ravenous / Smite / Awe Blast / Health Vamp",
+                    "helm": "Forge / Luck",
+                    "cape": "Lament / Vainglory / Penitence",
+                    "class": ""
+                }
+            }
+        },
+        "author": "Jix",
+        "dtCreated": 1745366309.203439,
+        "dtUpdated": 1745366309.203439,
+        "difficulty": "Unknown",
+        "strategy": "",
+        "video_url": "",
+        "thumbnail_url": ""
+    },
+    {
+        "name": "Full Sup 8",
+        "classes": [
+            "Stonecrusher",
+            "Lord of Order",
+            "Archpaladin",
+            "Shaman"
+        ],
+        "recommended_setup": {
+            "Stonecrusher": {
+                "items": [],
+                "enhancements": {
+                    "weapon": "Valiance / Praxis / Awe Blast",
+                    "helm": "Forge / Wizard / Healer / Fighter",
+                    "cape": "Absolution / Wizard / Healer / Fighter",
+                    "class": ""
+                }
+            },
+            "Lord of Order": {
+                "items": [],
+                "enhancements": {
+                    "weapon": "Awe Blast / Arcana's Concerto",
+                    "helm": "Luck / Forge / Wizard / Healer",
+                    "cape": "Penitence / Wizard / Luck / Healer",
+                    "class": ""
+                }
+            },
+            "Archpaladin": {
+                "items": [],
+                "enhancements": {
+                    "weapon": "Ravenous / Smite / Praxis / Spiral Carve",
+                    "helm": "Forge / Luck",
+                    "cape": "Lament / Penitence / Luck / Hybrid",
+                    "class": ""
+                }
+            },
+            "Shaman": {
+                "items": [],
+                "enhancements": {
+                    "weapon": "Elysium",
+                    "helm": "Pneuma / Wizard",
+                    "cape": "Vainglory / Penitence / Wizard / Healer",
+                    "class": ""
+                }
+            }
+        },
+        "author": "Jix",
+        "dtCreated": 1745366309.207491,
+        "dtUpdated": 1745366309.207491,
+        "difficulty": "Unknown",
+        "strategy": "",
+        "video_url": "",
+        "thumbnail_url": ""
+    },
+    {
+        "name": "Comp Lord 9",
+        "classes": [
+            "Lord of Order",
+            "Legion Revenant",
+            "Obsidian Paladin Chronomancer",
+            "Shaman"
+        ],
+        "recommended_setup": {
+            "Lord of Order": {
+                "items": [],
+                "enhancements": {
+                    "weapon": "Awe Blast / Arcana's Concerto",
+                    "helm": "Luck / Forge / Wizard / Healer",
+                    "cape": "Penitence / Wizard / Luck / Healer",
+                    "class": ""
+                }
+            },
+            "Legion Revenant": {
+                "items": [],
+                "enhancements": {
+                    "weapon": "Arcana's Concerto / Ravenous / Valiance / Praxis / Awe Blast",
+                    "helm": "Wizard/forge",
+                    "cape": "Vainglory / Penitence / Wizard / Luck",
+                    "class": ""
+                }
+            },
+            "Obsidian Paladin Chronomancer": {
+                "items": [],
+                "enhancements": {
+                    "weapon": "Ravenous / Praxis / Awe Blast",
+                    "helm": "Healer / Wizard",
+                    "cape": "Vainglory / Healer / Wizard",
+                    "class": ""
+                }
+            },
+            "Shaman": {
+                "items": [],
+                "enhancements": {
+                    "weapon": "Elysium",
+                    "helm": "Pneuma / Wizard",
+                    "cape": "Vainglory / Penitence / Wizard / Healer",
+                    "class": ""
+                }
+            }
+        },
+        "author": "Jix",
+        "dtCreated": 1745366309.212556,
+        "dtUpdated": 1745366309.212556,
+        "difficulty": "Unknown",
+        "strategy": "",
+        "video_url": "",
+        "thumbnail_url": ""
+    },
+    {
+        "name": "Comp Stone 9",
+        "classes": [
+            "Stonecrusher",
+            "Legion Revenant",
+            "Obsidian Paladin Chronomancer",
+            "Verus Doomknight"
+        ],
+        "recommended_setup": {
+            "Stonecrusher": {
+                "items": [],
+                "enhancements": {
+                    "weapon": "Valiance / Praxis / Awe Blast",
+                    "helm": "Forge / Wizard / Healer / Fighter",
+                    "cape": "Absolution / Wizard / Healer / Fighter",
+                    "class": ""
+                }
+            },
+            "Legion Revenant": {
+                "items": [],
+                "enhancements": {
+                    "weapon": "Arcana's Concerto / Ravenous / Valiance / Praxis / Awe Blast",
+                    "helm": "Wizard/forge",
+                    "cape": "Vainglory / Penitence / Wizard / Luck",
+                    "class": ""
+                }
+            },
+            "Obsidian Paladin Chronomancer": {
+                "items": [],
+                "enhancements": {
+                    "weapon": "Ravenous / Praxis / Awe Blast",
+                    "helm": "Healer / Wizard",
+                    "cape": "Vainglory / Healer / Wizard",
+                    "class": ""
+                }
+            },
+            "Verus Doomknight": {
+                "items": [],
+                "enhancements": {
+                    "weapon": "Ravenous / Dauntless / Valiance / Spiral Carve",
+                    "helm": "Anima / Forge / Luck",
+                    "cape": "Vainglory / Forge / Luck",
+                    "class": ""
+                }
+            }
+        },
+        "author": "Jix",
+        "dtCreated": 1745366309.21641,
+        "dtUpdated": 1745366309.21641,
+        "difficulty": "Unknown",
+        "strategy": "",
+        "video_url": "",
+        "thumbnail_url": ""
+    },
+    {
+        "name": "Full Sup 9",
+        "classes": [
+            "Stonecrusher",
+            "Lord of Order",
+            "Obsidian Paladin Chronomancer",
+            "Void Highlord"
+        ],
+        "recommended_setup": {
+            "Stonecrusher": {
+                "items": [],
+                "enhancements": {
+                    "weapon": "Valiance / Praxis / Awe Blast",
+                    "helm": "Forge / Wizard / Healer / Fighter",
+                    "cape": "Absolution / Wizard / Healer / Fighter",
+                    "class": ""
+                }
+            },
+            "Lord of Order": {
+                "items": [],
+                "enhancements": {
+                    "weapon": "Awe Blast / Arcana's Concerto",
+                    "helm": "Luck / Forge / Wizard / Healer",
+                    "cape": "Penitence / Wizard / Luck / Healer",
+                    "class": ""
+                }
+            },
+            "Obsidian Paladin Chronomancer": {
+                "items": [],
+                "enhancements": {
+                    "weapon": "Ravenous / Praxis / Awe Blast",
+                    "helm": "Healer / Wizard",
+                    "cape": "Vainglory / Healer / Wizard",
+                    "class": ""
+                }
+            },
+            "Void Highlord": {
+                "items": [],
+                "enhancements": {
+                    "weapon": "Ravenous / Dauntless / Valiance / Spiral Carve",
+                    "helm": "Anima / Forge / Luck",
+                    "cape": "Vainglory / Lament / Penitence / Forge / Luck",
+                    "class": ""
+                }
+            }
+        },
+        "author": "Jix",
+        "dtCreated": 1745366309.220638,
+        "dtUpdated": 1745366309.220638,
+        "difficulty": "Unknown",
+        "strategy": "",
+        "video_url": "",
+        "thumbnail_url": ""
+    },
+    {
+        "name": "Comp Lord 10",
+        "classes": [
+            "Lord of Order",
+            "Legion Revenant",
+            "Archpaladin",
+            "Verus Doomknight"
+        ],
+        "recommended_setup": {
+            "Lord of Order": {
+                "items": [],
+                "enhancements": {
+                    "weapon": "Awe Blast / Arcana's Concerto",
+                    "helm": "Luck / Forge / Wizard / Healer",
+                    "cape": "Penitence / Wizard / Luck / Healer",
+                    "class": ""
+                }
+            },
+            "Legion Revenant": {
+                "items": [],
+                "enhancements": {
+                    "weapon": "Arcana's Concerto / Ravenous / Valiance / Praxis / Awe Blast",
+                    "helm": "Wizard/forge",
+                    "cape": "Vainglory / Penitence / Wizard / Luck",
+                    "class": ""
+                }
+            },
+            "Archpaladin": {
+                "items": [],
+                "enhancements": {
+                    "weapon": "Ravenous / Smite / Praxis / Spiral Carve",
+                    "helm": "Forge / Luck",
+                    "cape": "Lament / Penitence / Luck / Hybrid",
+                    "class": ""
+                }
+            },
+            "Verus Doomknight": {
+                "items": [],
+                "enhancements": {
+                    "weapon": "Ravenous / Dauntless / Valiance / Spiral Carve",
+                    "helm": "Anima / Forge / Luck",
+                    "cape": "Vainglory / Forge / Luck",
+                    "class": ""
+                }
+            }
+        },
+        "author": "Jix",
+        "dtCreated": 1745366309.223724,
+        "dtUpdated": 1745366309.223724,
+        "difficulty": "Unknown",
+        "strategy": "",
+        "video_url": "",
+        "thumbnail_url": ""
+    },
+    {
+        "name": "Comp Stone 10",
+        "classes": [
+            "Stonecrusher",
+            "Legion Revenant",
+            "Obsidian Paladin Chronomancer",
+            "Chrono Shadowhunter"
+        ],
+        "recommended_setup": {
+            "Stonecrusher": {
+                "items": [],
+                "enhancements": {
+                    "weapon": "Valiance / Praxis / Awe Blast",
+                    "helm": "Forge / Wizard / Healer / Fighter",
+                    "cape": "Absolution / Wizard / Healer / Fighter",
+                    "class": ""
+                }
+            },
+            "Legion Revenant": {
+                "items": [],
+                "enhancements": {
+                    "weapon": "Arcana's Concerto / Ravenous / Valiance / Praxis / Awe Blast",
+                    "helm": "Wizard/forge",
+                    "cape": "Vainglory / Penitence / Wizard / Luck",
+                    "class": ""
+                }
+            },
+            "Obsidian Paladin Chronomancer": {
+                "items": [],
+                "enhancements": {
+                    "weapon": "Ravenous / Praxis / Awe Blast",
+                    "helm": "Healer / Wizard",
+                    "cape": "Vainglory / Healer / Wizard",
+                    "class": ""
+                }
+            },
+            "Chrono Shadowhunter": {
+                "items": [],
+                "enhancements": {
+                    "weapon": "Ravenous / Valiance / Spiral Carve / Health Vamp",
+                    "helm": "Forge / Luck / Vim",
+                    "cape": "Lament / Penitence / Luck",
+                    "class": ""
+                }
+            }
+        },
+        "author": "Jix",
+        "dtCreated": 1745366309.228522,
+        "dtUpdated": 1745366309.228522,
+        "difficulty": "Unknown",
+        "strategy": "",
+        "video_url": "",
+        "thumbnail_url": ""
+    },
+    {
+        "name": "Full Sup 10",
+        "classes": [
+            "Stonecrusher",
+            "Lord of Order",
+            "Archpaladin",
+            "Chrono Shadowhunter"
+        ],
+        "recommended_setup": {
+            "Stonecrusher": {
+                "items": [],
+                "enhancements": {
+                    "weapon": "Valiance / Praxis / Awe Blast",
+                    "helm": "Forge / Wizard / Healer / Fighter",
+                    "cape": "Absolution / Wizard / Healer / Fighter",
+                    "class": ""
+                }
+            },
+            "Lord of Order": {
+                "items": [],
+                "enhancements": {
+                    "weapon": "Awe Blast / Arcana's Concerto",
+                    "helm": "Luck / Forge / Wizard / Healer",
+                    "cape": "Penitence / Wizard / Luck / Healer",
+                    "class": ""
+                }
+            },
+            "Archpaladin": {
+                "items": [],
+                "enhancements": {
+                    "weapon": "Ravenous / Smite / Praxis / Spiral Carve",
+                    "helm": "Forge / Luck",
+                    "cape": "Lament / Penitence / Luck / Hybrid",
+                    "class": ""
+                }
+            },
+            "Chrono Shadowhunter": {
+                "items": [],
+                "enhancements": {
+                    "weapon": "Ravenous / Valiance / Spiral Carve / Health Vamp",
+                    "helm": "Forge / Luck / Vim",
+                    "cape": "Lament / Penitence / Luck",
+                    "class": ""
+                }
+            }
+        },
+        "author": "Jix",
+        "dtCreated": 1745366309.232475,
+        "dtUpdated": 1745366309.232475,
+        "difficulty": "Unknown",
+        "strategy": "",
+        "video_url": "",
+        "thumbnail_url": ""
+    },
+    {
+        "name": "Comp Lord 11",
+        "classes": [
+            "Lord of Order",
+            "Legion Revenant",
+            "Obsidian Paladin Chronomancer",
+            "Verus Doomknight"
+        ],
+        "recommended_setup": {
+            "Lord of Order": {
+                "items": [],
+                "enhancements": {
+                    "weapon": "Awe Blast / Arcana's Concerto",
+                    "helm": "Luck / Forge / Wizard / Healer",
+                    "cape": "Penitence / Wizard / Luck / Healer",
+                    "class": ""
+                }
+            },
+            "Legion Revenant": {
+                "items": [],
+                "enhancements": {
+                    "weapon": "Arcana's Concerto / Ravenous / Valiance / Praxis / Awe Blast",
+                    "helm": "Wizard/forge",
+                    "cape": "Vainglory / Penitence / Wizard / Luck",
+                    "class": ""
+                }
+            },
+            "Obsidian Paladin Chronomancer": {
+                "items": [],
+                "enhancements": {
+                    "weapon": "Ravenous / Praxis / Awe Blast",
+                    "helm": "Healer / Wizard",
+                    "cape": "Vainglory / Healer / Wizard",
+                    "class": ""
+                }
+            },
+            "Verus Doomknight": {
+                "items": [],
+                "enhancements": {
+                    "weapon": "Ravenous / Dauntless / Valiance / Spiral Carve",
+                    "helm": "Anima / Forge / Luck",
+                    "cape": "Vainglory / Forge / Luck",
+                    "class": ""
+                }
+            }
+        },
+        "author": "Jix",
+        "dtCreated": 1745366309.237575,
+        "dtUpdated": 1745366309.237575,
+        "difficulty": "Unknown",
+        "strategy": "",
+        "video_url": "",
+        "thumbnail_url": ""
+    },
+    {
+        "name": "Comp Stone 11",
+        "classes": [
+            "Stonecrusher",
+            "Legion Revenant",
+            "Archpaladin",
+            "Arcana Invoker"
+        ],
+        "recommended_setup": {
+            "Stonecrusher": {
+                "items": [],
+                "enhancements": {
+                    "weapon": "Valiance / Praxis / Awe Blast",
+                    "helm": "Forge / Wizard / Healer / Fighter",
+                    "cape": "Absolution / Wizard / Healer / Fighter",
+                    "class": ""
+                }
+            },
+            "Legion Revenant": {
+                "items": [],
+                "enhancements": {
+                    "weapon": "Arcana's Concerto / Ravenous / Valiance / Praxis / Awe Blast",
+                    "helm": "Wizard/forge",
+                    "cape": "Vainglory / Penitence / Wizard / Luck",
+                    "class": ""
+                }
+            },
+            "Archpaladin": {
+                "items": [],
+                "enhancements": {
+                    "weapon": "Ravenous / Smite / Praxis / Spiral Carve",
+                    "helm": "Forge / Luck",
+                    "cape": "Lament / Penitence / Luck / Hybrid",
+                    "class": ""
+                }
+            },
+            "Arcana Invoker": {
+                "items": [],
+                "enhancements": {
+                    "weapon": "Ravenous / Elysium",
+                    "helm": "Forge / Wizard / Pneuma",
+                    "cape": "Vainglory / Lament / Luck / Wizard",
+                    "class": ""
+                }
+            }
+        },
+        "author": "Jix",
+        "dtCreated": 1745366309.240919,
+        "dtUpdated": 1745366309.240919,
+        "difficulty": "Unknown",
+        "strategy": "",
+        "video_url": "",
+        "thumbnail_url": ""
+    },
+    {
+        "name": "Full Sup 11",
+        "classes": [
+            "Stonecrusher",
+            "Lord of Order",
+            "Obsidian Paladin Chronomancer",
+            "Chrono Shadowhunter"
+        ],
+        "recommended_setup": {
+            "Stonecrusher": {
+                "items": [],
+                "enhancements": {
+                    "weapon": "Valiance / Praxis / Awe Blast",
+                    "helm": "Forge / Wizard / Healer / Fighter",
+                    "cape": "Absolution / Wizard / Healer / Fighter",
+                    "class": ""
+                }
+            },
+            "Lord of Order": {
+                "items": [],
+                "enhancements": {
+                    "weapon": "Awe Blast / Arcana's Concerto",
+                    "helm": "Luck / Forge / Wizard / Healer",
+                    "cape": "Penitence / Wizard / Luck / Healer",
+                    "class": ""
+                }
+            },
+            "Obsidian Paladin Chronomancer": {
+                "items": [],
+                "enhancements": {
+                    "weapon": "Ravenous / Praxis / Awe Blast",
+                    "helm": "Healer / Wizard",
+                    "cape": "Vainglory / Healer / Wizard",
+                    "class": ""
+                }
+            },
+            "Chrono Shadowhunter": {
+                "items": [],
+                "enhancements": {
+                    "weapon": "Ravenous / Valiance / Spiral Carve / Health Vamp",
+                    "helm": "Forge / Luck / Vim",
+                    "cape": "Lament / Penitence / Luck",
+                    "class": ""
+                }
+            }
+        },
+        "author": "Jix",
+        "dtCreated": 1745366309.245335,
+        "dtUpdated": 1745366309.245335,
+        "difficulty": "Unknown",
+        "strategy": "",
+        "video_url": "",
+        "thumbnail_url": ""
+    },
+    {
+        "name": "Comp Stone 12",
+        "classes": [
+            "Stonecrusher",
+            "Legion Revenant",
+            "Obsidian Paladin Chronomancer",
+            "Arcana Invoker"
+        ],
+        "recommended_setup": {
+            "Stonecrusher": {
+                "items": [],
+                "enhancements": {
+                    "weapon": "Valiance / Praxis / Awe Blast",
+                    "helm": "Forge / Wizard / Healer / Fighter",
+                    "cape": "Absolution / Wizard / Healer / Fighter",
+                    "class": ""
+                }
+            },
+            "Legion Revenant": {
+                "items": [],
+                "enhancements": {
+                    "weapon": "Arcana's Concerto / Ravenous / Valiance / Praxis / Awe Blast",
+                    "helm": "Wizard/forge",
+                    "cape": "Vainglory / Penitence / Wizard / Luck",
+                    "class": ""
+                }
+            },
+            "Obsidian Paladin Chronomancer": {
+                "items": [],
+                "enhancements": {
+                    "weapon": "Ravenous / Praxis / Awe Blast",
+                    "helm": "Healer / Wizard",
+                    "cape": "Vainglory / Healer / Wizard",
+                    "class": ""
+                }
+            },
+            "Arcana Invoker": {
+                "items": [],
+                "enhancements": {
+                    "weapon": "Ravenous / Elysium",
+                    "helm": "Forge / Wizard / Pneuma",
+                    "cape": "Vainglory / Lament / Luck / Wizard",
+                    "class": ""
+                }
+            }
+        },
+        "author": "Jix",
+        "dtCreated": 1745366309.249597,
+        "dtUpdated": 1745366309.249597,
+        "difficulty": "Unknown",
+        "strategy": "",
+        "video_url": "",
+        "thumbnail_url": ""
+    },
+    {
+        "name": "Full Sup 12",
+        "classes": [
+            "Stonecrusher",
+            "Lord of Order",
+            "Archpaladin",
+            "Arcana Invoker"
+        ],
+        "recommended_setup": {
+            "Stonecrusher": {
+                "items": [],
+                "enhancements": {
+                    "weapon": "Valiance / Praxis / Awe Blast",
+                    "helm": "Forge / Wizard / Healer / Fighter",
+                    "cape": "Absolution / Wizard / Healer / Fighter",
+                    "class": ""
+                }
+            },
+            "Lord of Order": {
+                "items": [],
+                "enhancements": {
+                    "weapon": "Awe Blast / Arcana's Concerto",
+                    "helm": "Luck / Forge / Wizard / Healer",
+                    "cape": "Penitence / Wizard / Luck / Healer",
+                    "class": ""
+                }
+            },
+            "Archpaladin": {
+                "items": [],
+                "enhancements": {
+                    "weapon": "Ravenous / Smite / Praxis / Spiral Carve",
+                    "helm": "Forge / Luck",
+                    "cape": "Lament / Penitence / Luck / Hybrid",
+                    "class": ""
+                }
+            },
+            "Arcana Invoker": {
+                "items": [],
+                "enhancements": {
+                    "weapon": "Ravenous / Elysium",
+                    "helm": "Forge / Wizard / Pneuma",
+                    "cape": "Vainglory / Lament / Luck / Wizard",
+                    "class": ""
+                }
+            }
+        },
+        "author": "Jix",
+        "dtCreated": 1745366309.256278,
+        "dtUpdated": 1745366309.256278,
+        "difficulty": "Unknown",
+        "strategy": "",
+        "video_url": "",
+        "thumbnail_url": ""
+    },
+    {
+        "name": "Full Sup 13",
+        "classes": [
+            "Stonecrusher",
+            "Lord of Order",
+            "Obsidian Paladin Chronomancer",
+            "Arcana Invoker"
+        ],
+        "recommended_setup": {
+            "Stonecrusher": {
+                "items": [],
+                "enhancements": {
+                    "weapon": "Valiance / Praxis / Awe Blast",
+                    "helm": "Forge / Wizard / Healer / Fighter",
+                    "cape": "Absolution / Wizard / Healer / Fighter",
+                    "class": ""
+                }
+            },
+            "Lord of Order": {
+                "items": [],
+                "enhancements": {
+                    "weapon": "Awe Blast / Arcana's Concerto",
+                    "helm": "Luck / Forge / Wizard / Healer",
+                    "cape": "Penitence / Wizard / Luck / Healer",
+                    "class": ""
+                }
+            },
+            "Obsidian Paladin Chronomancer": {
+                "items": [],
+                "enhancements": {
+                    "weapon": "Ravenous / Praxis / Awe Blast",
+                    "helm": "Healer / Wizard",
+                    "cape": "Vainglory / Healer / Wizard",
+                    "class": ""
+                }
+            },
+            "Arcana Invoker": {
+                "items": [],
+                "enhancements": {
+                    "weapon": "Ravenous / Elysium",
+                    "helm": "Forge / Wizard / Pneuma",
+                    "cape": "Vainglory / Lament / Luck / Wizard",
+                    "class": ""
+                }
+            }
+        },
+        "author": "Jix",
+        "dtCreated": 1745366309.263677,
+        "dtUpdated": 1745366309.263677,
+        "difficulty": "Unknown",
+        "strategy": "",
+        "video_url": "",
+        "thumbnail_url": ""
+    },
+    {
+        "name": "Full Sup 14",
+        "classes": [
+            "Stonecrusher",
+            "Lord of Order",
+            "Archpaladin",
+            "Sentinel"
+        ],
+        "recommended_setup": {
+            "Stonecrusher": {
+                "items": [],
+                "enhancements": {
+                    "weapon": "Valiance / Praxis / Awe Blast",
+                    "helm": "Forge / Wizard / Healer / Fighter",
+                    "cape": "Absolution / Wizard / Healer / Fighter",
+                    "class": ""
+                }
+            },
+            "Lord of Order": {
+                "items": [],
+                "enhancements": {
+                    "weapon": "Awe Blast / Arcana's Concerto",
+                    "helm": "Luck / Forge / Wizard / Healer",
+                    "cape": "Penitence / Wizard / Luck / Healer",
+                    "class": ""
+                }
+            },
+            "Archpaladin": {
+                "items": [],
+                "enhancements": {
+                    "weapon": "Ravenous / Smite / Praxis / Spiral Carve",
+                    "helm": "Forge / Luck",
+                    "cape": "Lament / Penitence / Luck / Hybrid",
+                    "class": ""
+                }
+            },
+            "Sentinel": {
+                "items": [],
+                "enhancements": {
+                    "weapon": "Ravenous / Dauntless",
+                    "helm": "Forge / Luck",
+                    "cape": "Vainglory / Penitence / Luck",
+                    "class": ""
+                }
+            }
+        },
+        "author": "Jix",
+        "dtCreated": 1745366309.272219,
+        "dtUpdated": 1745366309.272219,
+        "difficulty": "Unknown",
+        "strategy": "",
+        "video_url": "",
+        "thumbnail_url": ""
+    },
+    {
+        "name": "Full Sup 15",
+        "classes": [
+            "Stonecrusher",
+            "Lord of Order",
+            "Obsidian Paladin Chronomancer",
+            "Sentinel"
+        ],
+        "recommended_setup": {
+            "Stonecrusher": {
+                "items": [],
+                "enhancements": {
+                    "weapon": "Valiance / Praxis / Awe Blast",
+                    "helm": "Forge / Wizard / Healer / Fighter",
+                    "cape": "Absolution / Wizard / Healer / Fighter",
+                    "class": ""
+                }
+            },
+            "Lord of Order": {
+                "items": [],
+                "enhancements": {
+                    "weapon": "Awe Blast / Arcana's Concerto",
+                    "helm": "Luck / Forge / Wizard / Healer",
+                    "cape": "Penitence / Wizard / Luck / Healer",
+                    "class": ""
+                }
+            },
+            "Obsidian Paladin Chronomancer": {
+                "items": [],
+                "enhancements": {
+                    "weapon": "Ravenous / Praxis / Awe Blast",
+                    "helm": "Healer / Wizard",
+                    "cape": "Vainglory / Healer / Wizard",
+                    "class": ""
+                }
+            },
+            "Sentinel": {
+                "items": [],
+                "enhancements": {
+                    "weapon": "Ravenous / Dauntless",
+                    "helm": "Forge / Luck",
+                    "cape": "Vainglory / Penitence / Luck",
+                    "class": ""
+                }
+            }
+        },
+        "author": "Jix",
+        "dtCreated": 1745366309.279134,
+        "dtUpdated": 1745366309.279134,
+        "difficulty": "Unknown",
+        "strategy": "",
+        "video_url": "",
+        "thumbnail_url": ""
+    },
+    {
+        "name": "Full Sup 16",
+        "classes": [
+            "Stonecrusher",
+            "Lord of Order",
+            "Archpaladin",
+            "Verus Doomknight"
+        ],
+        "recommended_setup": {
+            "Stonecrusher": {
+                "items": [],
+                "enhancements": {
+                    "weapon": "Valiance / Praxis / Awe Blast",
+                    "helm": "Forge / Wizard / Healer / Fighter",
+                    "cape": "Absolution / Wizard / Healer / Fighter",
+                    "class": ""
+                }
+            },
+            "Lord of Order": {
+                "items": [],
+                "enhancements": {
+                    "weapon": "Awe Blast / Arcana's Concerto",
+                    "helm": "Luck / Forge / Wizard / Healer",
+                    "cape": "Penitence / Wizard / Luck / Healer",
+                    "class": ""
+                }
+            },
+            "Archpaladin": {
+                "items": [],
+                "enhancements": {
+                    "weapon": "Ravenous / Smite / Praxis / Spiral Carve",
+                    "helm": "Forge / Luck",
+                    "cape": "Lament / Penitence / Luck / Hybrid",
+                    "class": ""
+                }
+            },
+            "Verus Doomknight": {
+                "items": [],
+                "enhancements": {
+                    "weapon": "Ravenous / Dauntless / Valiance / Spiral Carve",
+                    "helm": "Anima / Forge / Luck",
+                    "cape": "Vainglory / Forge / Luck",
+                    "class": ""
+                }
+            }
+        },
+        "author": "Jix",
+        "dtCreated": 1745366309.284653,
+        "dtUpdated": 1745366309.284653,
+        "difficulty": "Unknown",
+        "strategy": "",
+        "video_url": "",
+        "thumbnail_url": ""
+    },
+    {
+        "name": "Full Sup 16",
+        "classes": [
+            "Stonecrusher",
+            "Lord of Order",
+            "Obsidian Paladin Chronomancer",
+            "Verus Doomknight"
+        ],
+        "recommended_setup": {
+            "Stonecrusher": {
+                "items": [],
+                "enhancements": {
+                    "weapon": "Valiance / Praxis / Awe Blast",
+                    "helm": "Forge / Wizard / Healer / Fighter",
+                    "cape": "Absolution / Wizard / Healer / Fighter",
+                    "class": ""
+                }
+            },
+            "Lord of Order": {
+                "items": [],
+                "enhancements": {
+                    "weapon": "Awe Blast / Arcana's Concerto",
+                    "helm": "Luck / Forge / Wizard / Healer",
+                    "cape": "Penitence / Wizard / Luck / Healer",
+                    "class": ""
+                }
+            },
+            "Obsidian Paladin Chronomancer": {
+                "items": [],
+                "enhancements": {
+                    "weapon": "Ravenous / Praxis / Awe Blast",
+                    "helm": "Healer / Wizard",
+                    "cape": "Vainglory / Healer / Wizard",
+                    "class": ""
+                }
+            },
+            "Verus Doomknight": {
+                "items": [],
+                "enhancements": {
+                    "weapon": "Ravenous / Dauntless / Valiance / Spiral Carve",
+                    "helm": "Anima / Forge / Luck",
+                    "cape": "Vainglory / Forge / Luck",
+                    "class": ""
+                }
+            }
+        },
+        "author": "Jix",
+        "dtCreated": 1745366309.293338,
+        "dtUpdated": 1745366309.293338,
+        "difficulty": "Unknown",
+        "strategy": "",
+        "video_url": "",
+        "thumbnail_url": ""
+    }
+]

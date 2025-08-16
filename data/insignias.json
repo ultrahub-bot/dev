@@ -1,0 +1,29 @@
+{
+    "1361375557505253396": {
+        "items": [
+            {
+                "name": "Chaos Avenger"
+            }
+        ]
+    },
+    "1361368674803519604": {
+        "items": [
+            {
+                "name": "Dragonslayer",
+                "min": 302500
+            }
+        ]
+    },
+    "1361375062631907518": {
+        "items": [
+            {
+                "name": "DragonSlayer",
+                "min": 1
+            },
+            {
+                "name": "Chaos Avenger",
+                "min": 302500
+            }
+        ]
+    }
+}
