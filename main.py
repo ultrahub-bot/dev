@@ -20,9 +20,10 @@ def load_cogs(bot):
         #'cogs.AQW.aqw_servers',
         #'cogs.AQW.aqw_vincular',
         #'cogs.AQW.aqw_verificar',
-        'cogs.Template.template',
+        #'cogs.Template.template',
         'cogs.Template.users',
-        'cogs.aqw_python.guild'
+        #'cogs.radio.radio',
+        #'cogs.aqw_python.guild'
         #'cogs.Economy.economy',
         #'cogs.Fun.fun',
         #'cogs.Info.Info',
