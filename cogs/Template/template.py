@@ -54,15 +54,26 @@ class UniversalTemplate(commands.Cog):
     example_group = SlashCommandGroup("example", "Example commands group")
 
     @example_group.command(name="ping", description="Check bot latency.")
-    async def ping(self, ctx):
+    async def ping(
+        self, 
+        ctx
+        ):
         await ctx.respond(f"🏓 Pong! `{round(self.bot.latency * 1000)}ms`")
 
     @example_group.command(name="echo", description="Echo a message.")
-    async def echo(self, ctx, message: Option(str, "Message to echo")):
+    async def echo(
+        self, 
+        ctx, 
+        message: Option(str, "Message to echo")
+        ):
+        
         await ctx.respond(f"🗣 {message}")
 
     # ========= AUTOCOMPLETE EXAMPLE =========
-    async def autocomplete_fruits(self, ctx: discord.AutocompleteContext):
+    async def autocomplete_fruits(
+        self,
+        ctx: discord.AutocompleteContext
+        ):
         fruits = ["Apple", "Banana", "Cherry", "Dragonfruit", "Mango"]
         return [f for f in fruits if ctx.value.lower() in f.lower()]
 
@@ -82,7 +93,10 @@ class UniversalTemplate(commands.Cog):
 
     # ========= EMBED EXAMPLE =========
     @commands.slash_command(name="embed", description="Send a styled embed.")
-    async def embed_example(self, ctx):
+    async def embed_example(
+        self, 
+        ctx):
+        
         embed = discord.Embed(
             title="Example Embed",
             description="This is a reusable embed template.",
@@ -96,14 +110,20 @@ class UniversalTemplate(commands.Cog):
 
     # ========= BUTTON EXAMPLE =========
     @commands.slash_command(name="button", description="Show a button.")
-    async def button_example(self, ctx):
+    async def button_example(
+        self, 
+        ctx):
+        
         view = View()
         view.add_item(Button(label="Click Me", style=ButtonStyle.green, custom_id="example_btn"))
         await ctx.respond("Here is a button:", view=view)
 
     # ========= SELECT MENU EXAMPLE =========
     @commands.slash_command(name="select", description="Show a select menu.")
-    async def select_example(self, ctx):
+    async def select_example(
+        self, 
+        ctx):
+        
         view = View()
         select = Select(
             placeholder="Pick something...",
@@ -182,12 +202,13 @@ class UniversalTemplate(commands.Cog):
 
     # ========= THREAD EXAMPLE =========
     @commands.slash_command(name="thread", description="Create a thread.")
-    async def create_thread(self, ctx):
+    async def create_thread(
+        self, 
+        ctx):
+        
         msg = await ctx.respond("Thread starting...")
         message = await msg.original_response()
         await message.create_thread(name="Example Thread", auto_archive_duration=60)
-
-
 
     # ========= BACKGROUND TASK =========
     async def background_task(self):

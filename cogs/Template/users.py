@@ -87,11 +87,11 @@ class UserCommands(commands.Cog):
         # Prepara as atualizações
         updates = {}
         if aqw_id is not None:
-            updates['AQW_ID'] = aqw_id
+            updates['aqw_id'] = aqw_id
         if aqw_username is not None:
-            updates['AQW_Username'] = aqw_username
+            updates['aqw_username'] = aqw_username
         if admin is not None:
-            updates['Admin'] = int(admin)
+            updates['admin'] = int(admin)
         
         # Verifica se há campos para atualizar
         if not updates:
@@ -114,11 +114,11 @@ class UserCommands(commands.Cog):
             )
             
             if 'AQW_ID' in updates:
-                embed.add_field(name="ID AQW", value=updates['AQW_ID'], inline=True)
+                embed.add_field(name="ID AQW", value=updates['aqw_id'], inline=True)
             if 'AQW_Username' in updates:
-                embed.add_field(name="Usuário AQW", value=updates['AQW_Username'], inline=True)
+                embed.add_field(name="Usuário AQW", value=updates['aqw_username'], inline=True)
             if 'Admin' in updates:
-                embed.add_field(name="Admin", value="✅ Sim" if updates['Admin'] else "❌ Não", inline=True)
+                embed.add_field(name="Admin", value="✅ Sim" if updates['admin'] else "❌ Não", inline=True)
             
             await ctx.followup.send(embed=embed)
             
@@ -153,7 +153,7 @@ class UserCommands(commands.Cog):
             for user in users[:25]:
                 embed.add_field(
                     name=f"ID: {user['ID']} - {user['Name']}",
-                    value=f"Discord ID: {user['Discord_ID']}\nAdmin: {'✅' if user['Admin'] else '❌'}",
+                    value=f"Discord ID: {user['discord_id']}\nAdmin: {'✅' if user['admin'] else '❌'}",
                     inline=True
                 )
             
@@ -183,31 +183,31 @@ class UserCommands(commands.Cog):
             user_info = db.get_user_info(target.id)
             
             # Verifica se o usuário existe
-            if not hasattr(user_info, 'ID'):
+            if not hasattr(user_info, 'id'):
                 await ctx.respond(f"⚠️ {target.mention} não foi encontrado no banco de dados!", ephemeral=True)
                 return
                 
             # Cria um embed com as informações
             embed = discord.Embed(
-                title=f"📋 Informações de {user_info.Name}",
+                title=f"📋 Informações de {user_info.name}",
                 color=discord.Color.green()
             )
             
             embed.set_thumbnail(url=target.display_avatar.url)
             
             # Adiciona campos básicos
-            embed.add_field(name="🆔 ID do Banco", value=user_info.ID, inline=True)
-            embed.add_field(name="👤 Nome", value=user_info.Name, inline=True)
-            embed.add_field(name="🤖 É Bot", value="✅" if user_info.Discord_IsBot else "❌", inline=True)
+            embed.add_field(name="🆔 ID do Banco", value=user_info.id, inline=True)
+            embed.add_field(name="👤 Nome", value=user_info.name, inline=True)
+            embed.add_field(name="🤖 É Bot", value="✅" if user_info.discord_is_bot else "❌", inline=True)
             
             # Adiciona informações do Discord
-            embed.add_field(name="📅 Criado em", value=user_info.Discord_CreatedAt, inline=True)
-            embed.add_field(name="👑 Admin", value="✅" if user_info.Admin else "❌", inline=True)
+            embed.add_field(name="📅 Criado em", value=user_info.discord_created_at, inline=True)
+            embed.add_field(name="👑 Admin", value="✅" if user_info.is_admin else "❌", inline=True)
             
             # Adiciona informações do AQW se existirem
-            if hasattr(user_info, 'AQW_ID') and user_info.AQW_ID != 0:
-                embed.add_field(name="🎮 AQW ID", value=user_info.AQW_ID, inline=True)
-                embed.add_field(name="🧙 AQW Username", value=user_info.AQW_Username, inline=True)
+            if hasattr(user_info, 'aqw_id') and user_info.aqw_id != 0:
+                embed.add_field(name="🎮 AQW ID", value=user_info.aqw_id, inline=True)
+                embed.add_field(name="🧙 AQW Username", value=user_info.aqw_username, inline=True)
             
             await ctx.respond(embed=embed, ephemeral=True)
             

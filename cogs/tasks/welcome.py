@@ -2,6 +2,7 @@
 import discord
 from discord.ext import commands
 import config
+from database import db
 
 class Welcome(commands.Cog):
     def __init__(self, bot: commands.Bot):
@@ -16,27 +17,32 @@ class Welcome(commands.Cog):
         self.bot.loop.create_task(self.initialize_pending_members())
 
     async def initialize_pending_members(self):
-        """Verifica todos os membros ao iniciar o bot"""
+        """Verifica todos os membros ao iniciar o bot e adiciona ao banco de dados se necessário"""
         await self.bot.wait_until_ready()
         guild = self.bot.guilds[0]
         pending_role = guild.get_role(self.pending_role_id)
-        notabot_role = guild.get_role(self.notabot_role_id)  # Adicionado
+        notabot_role = guild.get_role(self.notabot_role_id)
 
-        if not pending_role or not notabot_role:  # Verifica ambos os cargos
+        if not pending_role or not notabot_role:
             print(f"[ERRO] Cargos não encontrados (Pending: {self.pending_role_id}, NotABot: {self.notabot_role_id})")
             return
 
         for member in guild.members:
-            # Verifica se o membro NÃO possui AMBOS os cargos
+            # Verifica se o membro precisa ser processado
             if pending_role not in member.roles and notabot_role not in member.roles:
                 await self.process_member(member)
+            
+            # Verifica se o usuário está no banco de dados
+            if not db.check_user_exists(member.id):
+                print(f"[INFO] Adicionando {member} ao banco de dados...")
+                db.add_user(member)
 
     async def process_member(self, member: discord.Member):
+        """Processa um novo membro, adicionando cargos e enviando mensagens"""
         guild = member.guild
         pending_role = guild.get_role(self.pending_role_id)
         notabot_role = guild.get_role(self.notabot_role_id)
 
-        # Verificação redundante para segurança
         if notabot_role in member.roles:
             print(f"[INFO] {member} já possui NotABot. Ignorando.")
             return
@@ -49,26 +55,37 @@ class Welcome(commands.Cog):
             return
 
         # Envia as mensagens de boas-vindas
+        await self.send_welcome_messages(member)
+
+    async def send_welcome_messages(self, member: discord.Member):
+        """Envia mensagens de boas-vindas públicas e privadas"""
+        guild = member.guild
         welcome_channel = guild.get_channel(self.welcome_channel_id)
         verify_channel = guild.get_channel(self.verify_channel_id)
         rules_channel = guild.get_channel(self.rules_channel_id)
 
-        if all([welcome_channel, verify_channel, rules_channel]):
-            try:
-                embed = self.create_welcome_embed(member, verify_channel, rules_channel)
-                await welcome_channel.send(embed=embed)
-            except Exception as e:
-                print(f"[ERRO] Ao enviar embed público para {member}: {e}")
+        if not all([welcome_channel, verify_channel, rules_channel]):
+            print("[ERRO] Um ou mais canais não encontrados!")
+            return
 
-            try:
-                embed_dm = self.create_dm_embed(member, verify_channel, rules_channel)
-                await member.send(embed=embed_dm)
-            except discord.Forbidden:
-                print(f"[AVISO] {member} bloqueou DMs.")
-            except Exception as e:
-                print(f"[ERRO DM] {e}")
+        # Mensagem pública
+        try:
+            embed = self.create_welcome_embed(member, verify_channel, rules_channel)
+            await welcome_channel.send(embed=embed)
+        except Exception as e:
+            print(f"[ERRO] Ao enviar embed público para {member}: {e}")
+
+        # Mensagem privada
+        try:
+            embed_dm = self.create_dm_embed(member, verify_channel, rules_channel)
+            await member.send(embed=embed_dm)
+        except discord.Forbidden:
+            print(f"[AVISO] {member} bloqueou DMs.")
+        except Exception as e:
+            print(f"[ERRO DM] {e}")
 
     def create_welcome_embed(self, member: discord.Member, verify_channel: discord.TextChannel, rules_channel: discord.TextChannel) -> discord.Embed:
+        """Cria embed de boas-vindas público"""
         embed = discord.Embed(
             title="🎉 Welcome | Bem-vindo(a)!",
             description=(
@@ -97,6 +114,7 @@ class Welcome(commands.Cog):
         return embed
 
     def create_dm_embed(self, member: discord.Member, verify_channel: discord.TextChannel, rules_channel: discord.TextChannel) -> discord.Embed:
+        """Cria embed de boas-vindas privado"""
         embed = discord.Embed(
             title="👋 Welcome Message | Mensagem de Boas-vindas",
             description=(
@@ -126,15 +144,21 @@ class Welcome(commands.Cog):
 
     @commands.Cog.listener()
     async def on_member_join(self, member: discord.Member):
+        """Lida com novos membros que entram no servidor"""
         guild = member.guild
         pending_role = guild.get_role(self.pending_role_id)
-        notabot_role = guild.get_role(self.notabot_role_id)  # Adicionado
+        notabot_role = guild.get_role(self.notabot_role_id)
 
         # Verifica se o membro já é verificado
         if notabot_role in member.roles:
             print(f"[INFO] {member} já possui NotABot. Ignorando.")
             return
 
+        # Adiciona ao banco de dados se não existir
+        if not db.check_user_exists(member.id):
+            db.add_user(member)
+
+        # Adiciona cargo de pendente
         if pending_role:
             try:
                 await member.add_roles(pending_role, reason="Novo membro - verificação pendente")
@@ -144,33 +168,8 @@ class Welcome(commands.Cog):
         else:
             print(f"[ERRO] Cargo não encontrado (ID: {self.pending_role_id})")
 
-        # Buscar canais
-        welcome_channel = guild.get_channel(self.welcome_channel_id)
-        verify_channel = guild.get_channel(self.verify_channel_id)
-        rules_channel = guild.get_channel(self.rules_channel_id)
-
-        # Garantir que todos os canais estão disponíveis
-        if not all([welcome_channel, verify_channel, rules_channel]):
-            print("[ERRO] Um ou mais canais não encontrados!")
-            return
-
-        # Enviar mensagem de boas-vindas pública com embed
-        try:
-            embed = self.create_welcome_embed(member, verify_channel, rules_channel)
-            await welcome_channel.send(embed=embed)
-            print(f"[MENSAGEM] Embed enviado para #{welcome_channel.name}")
-        except Exception as e:
-            print(f"[ERRO] Ao enviar embed público: {e}")
-
-        # Enviar DM com embed
-        try:
-            embed_dm = self.create_dm_embed(member, verify_channel, rules_channel)
-            await member.send(embed=embed_dm)
-            print(f"[DM] Embed enviado para {member.name}")
-        except discord.Forbidden:
-            print(f"[AVISO] {member.name} bloqueou DMs.")
-        except Exception as e:
-            print(f"[ERRO DM] {e}")
+        # Envia mensagens de boas-vindas
+        await self.send_welcome_messages(member)
 
 def setup(bot):
     bot.add_cog(Welcome(bot))

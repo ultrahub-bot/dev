@@ -32,23 +32,70 @@ class DatabaseHandler:
         """Create database tables if they don't already exist."""
         try:
             with self._get_connection() as conn:
-                conn.execute("""
+                conn.executescript("""
                     CREATE TABLE IF NOT EXISTS users (
-                        ID INTEGER PRIMARY KEY AUTOINCREMENT,
-                        Name TEXT NOT NULL DEFAULT 'Discord_Name',
-                        Admin INTEGER NOT NULL DEFAULT 0,
-                        Discord_ID INTEGER NOT NULL DEFAULT 0 UNIQUE,
-                        Discord_Username TEXT NOT NULL DEFAULT 'Discord Name',
-                        Discord_Mention TEXT NOT NULL DEFAULT 'Discord Mention',
-                        Discord_AvatarURL TEXT NOT NULL DEFAULT 'Discord Avatar Url',
-                        Discord_IsBot INTEGER NOT NULL DEFAULT 0,
-                        Discord_CreatedAt TEXT NOT NULL DEFAULT 'Discord_Created_At',
-                        AQW_ID INTEGER NOT NULL DEFAULT 0,
-                        AQW_Username TEXT NOT NULL DEFAULT 'AQW_Username'
-                    )
+                        id INTEGER PRIMARY KEY AUTOINCREMENT,
+                        name TEXT NOT NULL DEFAULT 'Discord_Name',
+                        is_admin BOOLEAN NOT NULL DEFAULT 0,
+                        discord_id INTEGER NOT NULL UNIQUE,
+                        discord_username TEXT NOT NULL DEFAULT 'Discord Name',
+                        discord_mention TEXT NOT NULL DEFAULT 'Discord Mention',
+                        discord_avatar_url TEXT NOT NULL DEFAULT 'Discord Avatar Url',
+                        discord_is_bot BOOLEAN NOT NULL DEFAULT 0,
+                        discord_created_at TEXT NOT NULL DEFAULT 'Discord_Created_At',
+                        aqw_id INTEGER NOT NULL DEFAULT 0,
+                        aqw_username TEXT NOT NULL DEFAULT 'AQW_Username'
+                    );
+
+                    CREATE TABLE IF NOT EXISTS bosses (
+                        id INTEGER PRIMARY KEY AUTOINCREMENT,
+                        name TEXT NOT NULL DEFAULT 'Boss_Name',
+                        party_size INTEGER NOT NULL,
+                        map TEXT NOT NULL DEFAULT 'otto',
+                        difficulty INTEGER NOT NULL DEFAULT 0,
+                        hp INTEGER NOT NULL DEFAULT 0,
+                        level INTEGER NOT NULL DEFAULT 0,
+                        tips TEXT NOT NULL DEFAULT 'None',
+                        wiki_url TEXT NOT NULL DEFAULT 'Wiki_URL',
+                        guide_url TEXT NOT NULL DEFAULT 'Guide_URL',
+                        thumbnail_url TEXT NOT NULL DEFAULT 'Thumbnail_URL',
+                        icon_url TEXT NOT NULL DEFAULT 'Icon_URL',
+                        is_hidden BOOLEAN NOT NULL DEFAULT 0,
+                        notify_role_id INTEGER NOT NULL DEFAULT 0
+                    );
                 """)
         except Exception as e:
             self.logger.error(f"Error initializing database: {e}", exc_info=True)
+            raise
+
+    def _populate_db(self) -> None:
+        """
+        Populate initial data from SQL files located in /database/sql/.
+        """
+        try:
+            # Caminho relativo à raiz do projeto
+            sql_folder = Path(__file__).parent / "database/sql"
+            if not sql_folder.exists() or not sql_folder.is_dir():
+                self.logger.warning(f"No SQL folder found at '{sql_folder}', skipping population.")
+                return
+
+            # Aqui você pode especificar apenas os arquivos que quer executar
+            sql_files = sorted(sql_folder.glob("*.sql"))  # Todos arquivos .sql na pasta
+            if not sql_files:
+                self.logger.warning(f"No .sql files found in '{sql_folder}', skipping population.")
+                return
+
+            with self._get_connection() as conn:
+                for sql_file in sql_files:
+                    self.logger.info(f"Executing {sql_file.name}...")
+                    with sql_file.open("r", encoding="utf-8") as f:
+                        sql_script = f.read()
+                        conn.executescript(sql_script)
+
+            self.logger.info("Database populated successfully from all SQL files.")
+
+        except Exception as e:
+            self.logger.error(f"Error populating database: {e}", exc_info=True)
             raise
 
     # ==========================================================
@@ -75,9 +122,9 @@ class DatabaseHandler:
 
                 cursor.execute("""
                     INSERT INTO users (
-                        Name, Discord_ID, Discord_Username, Discord_Mention,
-                        Discord_AvatarURL, Discord_IsBot, Discord_CreatedAt,
-                        AQW_ID, AQW_Username
+                        name, discord_id, discord_username, discord_mention,
+                        discord_avatar_url, discord_is_bot, discord_created_at,
+                        aqw_id, aqw_username
                     ) VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?)
                 """, (
                     getattr(discord_user, 'display_name', str(discord_user)),
@@ -110,7 +157,7 @@ class DatabaseHandler:
                 set_clause = ", ".join(f"{k} = ?" for k in kwargs)
                 values = list(kwargs.values()) + [discord_id]
                 cursor.execute(
-                    f"UPDATE users SET {set_clause} WHERE Discord_ID = ?",
+                    f"UPDATE users SET {set_clause} WHERE discord_id = ?",
                     values
                 )
                 return cursor.rowcount > 0
@@ -123,7 +170,7 @@ class DatabaseHandler:
         try:
             with self._get_connection() as conn:
                 cursor = conn.cursor()
-                cursor.execute("SELECT * FROM users WHERE Discord_ID = ?", (discord_id,))
+                cursor.execute("SELECT * FROM users WHERE discord_id = ?", (discord_id,))
                 result = cursor.fetchone()
                 return dict(result) if result else None
         except Exception as e:
@@ -135,7 +182,7 @@ class DatabaseHandler:
         try:
             with self._get_connection() as conn:
                 cursor = conn.cursor()
-                cursor.execute("DELETE FROM users WHERE Discord_ID = ?", (discord_id,))
+                cursor.execute("DELETE FROM users WHERE discord_id = ?", (discord_id,))
                 return cursor.rowcount > 0
         except Exception as e:
             self.logger.error(f"Error deleting user {discord_id}: {e}", exc_info=True)
@@ -166,11 +213,135 @@ class DatabaseHandler:
         try:
             with self._get_connection() as conn:
                 cursor = conn.cursor()
-                cursor.execute("SELECT 1 FROM users WHERE Discord_ID = ?", (discord_id,))
+                cursor.execute("SELECT 1 FROM users WHERE discord_id = ?", (discord_id,))
                 return cursor.fetchone() is not None
         except Exception as e:
             self.logger.error(f"Error checking user {discord_id}: {e}", exc_info=True)
             return False
+
+    # ==========================================================
+    # ================= BOSS OPERATIONS =======================
+    # ==========================================================
+
+
+    def add_boss(self, boss_data: Dict) -> bool:
+        """
+        Add a new boss with all required fields.
+
+        Args:
+            boss_data (Dict): Dictionary containing boss info.
+
+        Returns:
+            bool: True if created, False if already exists or error.
+        """
+        try:
+            with self._get_connection() as conn:
+                cursor = conn.cursor()
+
+                # Evita duplicidade pelo nome
+                cursor.execute("SELECT 1 FROM bosses WHERE name = ?", (boss_data.get("name"),))
+                if cursor.fetchone():
+                    return False
+
+                cursor.execute("""
+                    INSERT INTO bosses (
+                        name, party_size, map, difficulty, hp, level,
+                        tips, wiki_url, guide_url, thumbnail_url,
+                        icon_url, is_hidden, notify_role_id
+                    ) VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?)
+                """, (
+                    boss_data.get("name", "Boss_Name"),
+                    boss_data.get("party_size", 1),
+                    boss_data.get("map", "otto"),
+                    boss_data.get("difficulty", 0),
+                    boss_data.get("hp", 0),
+                    boss_data.get("level", 0),
+                    boss_data.get("tips", "None"),
+                    boss_data.get("wiki_url", "Wiki_URL"),
+                    boss_data.get("guide_url", "Guide_URL"),
+                    boss_data.get("thumbnail_url", "Thumbnail_URL"),
+                    boss_data.get("icon_url", "Icon_URL"),
+                    int(boss_data.get("is_hidden", 0)),
+                    boss_data.get("notify_role_id", 0)
+                ))
+                return True
+
+        except sqlite3.IntegrityError as e:
+            self.logger.warning(f"Boss already exists: {boss_data.get('name')} ({e})")
+            return False
+        except Exception as e:
+            self.logger.error(f"Error adding boss {boss_data.get('name')}: {e}", exc_info=True)
+            return False
+
+    # ----------------- UPDATE BOSS -----------------
+    def update_boss(self, boss_id: int, **kwargs) -> bool:
+        """Update boss fields by boss ID."""
+        if not kwargs:
+            return False
+
+        try:
+            with self._get_connection() as conn:
+                cursor = conn.cursor()
+                set_clause = ", ".join(f"{k} = ?" for k in kwargs)
+                values = list(kwargs.values()) + [boss_id]
+                cursor.execute(
+                    f"UPDATE bosses SET {set_clause} WHERE id = ?",
+                    values
+                )
+                return cursor.rowcount > 0
+        except Exception as e:
+            self.logger.error(f"Error updating boss {boss_id}: {e}", exc_info=True)
+            return False
+
+    # ----------------- GET BOSS -----------------
+    def get_boss(self, boss_id: int) -> Optional[Dict]:
+        """Retrieve a boss by ID."""
+        try:
+            with self._get_connection() as conn:
+                cursor = conn.cursor()
+                cursor.execute("SELECT * FROM bosses WHERE id = ?", (boss_id,))
+                result = cursor.fetchone()
+                return dict(result) if result else None
+        except Exception as e:
+            self.logger.error(f"Error getting boss {boss_id}: {e}", exc_info=True)
+            return None
+
+    # ----------------- DELETE BOSS -----------------
+    def delete_boss(self, boss_id: int) -> bool:
+        """Delete a boss by ID."""
+        try:
+            with self._get_connection() as conn:
+                cursor = conn.cursor()
+                cursor.execute("DELETE FROM bosses WHERE id = ?", (boss_id,))
+                return cursor.rowcount > 0
+        except Exception as e:
+            self.logger.error(f"Error deleting boss {boss_id}: {e}", exc_info=True)
+            return False
+
+    # ----------------- LIST BOSSES -----------------
+    def list_bosses(self) -> List[Dict]:
+        """Return all bosses."""
+        try:
+            with self._get_connection() as conn:
+                cursor = conn.cursor()
+                cursor.execute("SELECT * FROM bosses")
+                return [dict(row) for row in cursor.fetchall()]
+        except Exception as e:
+            self.logger.error(f"Error listing bosses: {e}", exc_info=True)
+            return []
+
+    # ----------------- CHECK BOSS EXISTS -----------------
+    def check_boss_exists(self, boss_id: int) -> bool:
+        """Check if a boss exists by ID."""
+        try:
+            with self._get_connection() as conn:
+                cursor = conn.cursor()
+                cursor.execute("SELECT 1 FROM bosses WHERE id = ?", (boss_id,))
+                return cursor.fetchone() is not None
+        except Exception as e:
+            self.logger.error(f"Error checking boss {boss_id}: {e}", exc_info=True)
+            return False
+
 
     # ==========================================================
     # ================ GENERAL QUERY METHODS ===================
@@ -201,3 +372,5 @@ class DatabaseHandler:
 
 # Global database instance
 db = DatabaseHandler()
+#db._populate_db() # Descomente esta linha caso precise repopular o banco de dados com os arquivos SQL
+
