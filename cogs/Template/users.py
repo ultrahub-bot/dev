@@ -152,8 +152,8 @@ class UserCommands(commands.Cog):
             # Adiciona até 25 usuários (limite do Discord)
             for user in users[:25]:
                 embed.add_field(
-                    name=f"ID: {user['ID']} - {user['Name']}",
-                    value=f"Discord ID: {user['discord_id']}\nAdmin: {'✅' if user['admin'] else '❌'}",
+                    name=f"ID: {user['id']} - {user['name']}",
+                    value=f"Discord ID: {user['discord_id']}\nAdmin: {'✅' if user['is_admin'] else '❌'}",
                     inline=True
                 )
             

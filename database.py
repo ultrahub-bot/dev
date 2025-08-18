@@ -36,7 +36,7 @@ class DatabaseHandler:
                     CREATE TABLE IF NOT EXISTS users (
                         id INTEGER PRIMARY KEY AUTOINCREMENT,
                         name TEXT NOT NULL DEFAULT 'Discord_Name',
-                        is_admin BOOLEAN NOT NULL DEFAULT 0,
+                        is_admin INTEGER NOT NULL DEFAULT 0,
                         discord_id INTEGER NOT NULL UNIQUE,
                         discord_username TEXT NOT NULL DEFAULT 'Discord Name',
                         discord_mention TEXT NOT NULL DEFAULT 'Discord Mention',
@@ -44,8 +44,12 @@ class DatabaseHandler:
                         discord_is_bot BOOLEAN NOT NULL DEFAULT 0,
                         discord_created_at TEXT NOT NULL DEFAULT 'Discord_Created_At',
                         aqw_id INTEGER NOT NULL DEFAULT 0,
-                        aqw_username TEXT NOT NULL DEFAULT 'AQW_Username'
+                        aqw_level INTEGER NOT NULL DEFAULT 0,
+                        aqw_username TEXT NOT NULL DEFAULT 'AQW_Username',
+                        exp INTEGER NOT NULL DEFAULT 0,
+                        gold INTEGER NOT NULL DEFAULT 0
                     );
+
 
                     CREATE TABLE IF NOT EXISTS bosses (
                         id INTEGER PRIMARY KEY AUTOINCREMENT,
@@ -101,22 +105,11 @@ class DatabaseHandler:
     # ==========================================================
     # ================= USER OPERATIONS ========================
     # ==========================================================
-
     def add_user(self, discord_user) -> bool:
-        """
-        Add a new user with all required fields.
-
-        Args:
-            discord_user: Discord user object.
-
-        Returns:
-            bool: True if created, False if already exists or error.
-        """
         try:
             with self._get_connection() as conn:
                 cursor = conn.cursor()
-
-                cursor.execute("SELECT 1 FROM users WHERE Discord_ID = ?", (discord_user.id,))
+                cursor.execute("SELECT 1 FROM users WHERE discord_id = ?", (discord_user.id,))
                 if cursor.fetchone():
                     return False
 
@@ -124,8 +117,8 @@ class DatabaseHandler:
                     INSERT INTO users (
                         name, discord_id, discord_username, discord_mention,
                         discord_avatar_url, discord_is_bot, discord_created_at,
-                        aqw_id, aqw_username
-                    ) VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?)
+                        aqw_id, aqw_level, aqw_username, exp, gold
+                    ) VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?)
                 """, (
                     getattr(discord_user, 'display_name', str(discord_user)),
                     discord_user.id,
@@ -134,18 +127,20 @@ class DatabaseHandler:
                     str(discord_user.display_avatar.url),
                     int(discord_user.bot),
                     discord_user.created_at.isoformat(),
-                    0,
-                    'AQW_Username'
+                    0,  # aqw_id
+                    0,  # aqw_level
+                    'AQW_Username',
+                    0,  # exp
+                    0   # gold
                 ))
                 return True
-
         except sqlite3.IntegrityError as e:
             self.logger.warning(f"User already exists: {discord_user.id} ({e})")
             return False
         except Exception as e:
             self.logger.error(f"Error adding user {discord_user.id}: {e}", exc_info=True)
             return False
-
+        
     def update_user(self, discord_id: int, **kwargs) -> bool:
         """Update user fields by Discord ID."""
         if not kwargs:

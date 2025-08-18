@@ -34,6 +34,7 @@ COGS = [
     "cogs.features.aqw.vincular",
     "cogs.features.aqw.servers",
     "cogs.features.aqw.charpage",
+    "cogs.features.fun.afk",
     "cogs.template.users",
     "cogs.template.bosses",
     # "cogs.template.template",

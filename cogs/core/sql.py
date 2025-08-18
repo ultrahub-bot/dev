@@ -1,83 +1,77 @@
-# cogs/sql_query.py
+# cogs/core/sqlquery.py
 import discord
 from discord.ext import commands
 from database import db
 
-
 class SQLQueryModal(discord.ui.Modal):
     def __init__(self):
-        super().__init__(title="Executar SQL Query")
+        super().__init__(title="Executar Consulta SQL")
+        self.add_item(discord.ui.InputText(
+            label="Consulta SQL",
+            style=discord.InputTextStyle.long,
+            placeholder="Ex: SELECT * FROM users WHERE id = 1;"
+        ))
 
-        # Campo para digitar a query
-        self.query_input = discord.TextInput(
-            label="SQL Query",
-            style=discord.TextStyle.paragraph,
-            placeholder="Digite sua query SQL aqui...",
-            required=True,
-            max_length=2000,
-        )
-        self.add_item(self.query_input)
-
-    async def on_submit(self, interaction: discord.Interaction):
-        sql = self.query_input.value.strip()
+    async def callback(self, interaction: discord.Interaction):
+        query = self.children[0].value.strip()
+        if not query:
+            await interaction.response.send_message(
+                "⚠️ Nenhuma query fornecida.",
+                ephemeral=True
+            )
+            return
 
         try:
-            # Executa apenas SELECT (seguro)
-            if sql.lower().startswith("select"):
-                results = db.execute_query(sql)
-
+            # Detecta se é SELECT ou modificação
+            if query.lower().startswith("select"):
+                results = db.execute_query(query)
                 if not results:
                     await interaction.response.send_message(
-                        "✅ Query executada, mas sem resultados.",
-                        ephemeral=True,
+                        "⚠️ Nenhum resultado encontrado.",
+                        ephemeral=True
                     )
                     return
 
-                # Formata os resultados em tabela simples
-                header = " | ".join(results[0].keys())
-                rows = [" | ".join(str(v) for v in row.values()) for row in results]
-                preview = "\n".join(rows[:10])  # limita a 10 linhas
-
-                formatted = f"```sql\n{header}\n{'-' * len(header)}\n{preview}\n```"
-                if len(results) > 10:
-                    formatted += f"\n⚠️ Mostrando apenas 10 de {len(results)} linhas."
-
-                await interaction.response.send_message(formatted, ephemeral=True)
-
-            else:
-                # Para INSERT, UPDATE, DELETE, CREATE...
-                with db._get_connection() as conn:
-                    cursor = conn.cursor()
-                    cursor.execute(sql)
-                    conn.commit()
-                    count = cursor.rowcount
+                # Monta string com resultados (limite 5 linhas)
+                preview = ""
+                for row in results[:5]:
+                    preview += f"```{row}```\n"
+                if len(results) > 5:
+                    preview += f"... e mais {len(results)-5} resultados."
 
                 await interaction.response.send_message(
-                    f"✅ Query executada com sucesso. ({count} linha(s) afetada(s))",
-                    ephemeral=True,
+                    f"✅ Resultado da consulta:\n{preview}",
+                    ephemeral=True
+                )
+            else:
+                # Queries de modificação: UPDATE, INSERT, DELETE
+                with db._get_connection() as conn:
+                    cursor = conn.cursor()
+                    cursor.execute(query)
+                    conn.commit()
+                    affected = cursor.rowcount
+                await interaction.response.send_message(
+                    f"✅ Query executada com sucesso! Linhas afetadas: {affected}",
+                    ephemeral=True
                 )
 
         except Exception as e:
             await interaction.response.send_message(
-                f"❌ Erro ao executar a query:\n```{e}```",
-                ephemeral=True,
+                f"❌ Erro ao executar query:\n```{e}```",
+                ephemeral=True
             )
 
 
 class SQLQueryCog(commands.Cog):
-    def __init__(self, bot):
+    def __init__(self, bot: commands.Bot):
         self.bot = bot
 
-    @commands.slash_command(
-        name="sql",
-        description="Executa uma consulta SQL no banco de dados",
-    )
+    @commands.slash_command(name="sqlquery", description="Executa uma consulta SQL no banco")
     @commands.has_permissions(administrator=True)
-    async def sql(self, ctx: discord.ApplicationContext):
-        """Abre um formulário (modal) para executar uma query SQL"""
-        modal = SQLQueryModal()
-        await ctx.send_modal(modal)
+    async def sqlquery(self, ctx: discord.ApplicationContext):
+        """Abre um formulário para executar SQL (somente admin)."""
+        await ctx.send_modal(SQLQueryModal())
 
 
-def setup(bot):
+def setup(bot: commands.Bot):
     bot.add_cog(SQLQueryCog(bot))
