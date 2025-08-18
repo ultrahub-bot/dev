@@ -63,6 +63,7 @@ BOT_CHANNEL_ID = get_setting("BOT_CHANNEL_ID", cast_type=int)
 RULES_CHANNEL_ID = get_setting("RULES_CHANNEL_ID", cast_type=int)
 VERIFY_CHANNEL_ID = get_setting("VERIFY_CHANNEL_ID", cast_type=int)
 WELCOME_CHANNEL_ID = get_setting("WELCOME_CHANNEL_ID", cast_type=int)
+LOGS_CHANNEL_ID = get_setting("LOGS_CHANNEL_ID", cast_type=int)
 
 # 🛡 RAIDS
 RAID_CHANNEL_ID = get_setting("RAID_CHANNEL_ID", cast_type=int)

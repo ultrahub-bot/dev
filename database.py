@@ -13,7 +13,7 @@ class DatabaseHandler:
         """
         Initialize the DatabaseHandler and create the database if it doesn't exist.
         """
-        self.db_path = Path("database") / db_name
+        self.db_path = Path("data/database") / db_name
         self.db_path.parent.mkdir(exist_ok=True)
         self.logger = logging.getLogger("database")
         self._initialize_db()
