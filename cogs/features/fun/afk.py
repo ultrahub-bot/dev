@@ -99,7 +99,8 @@ class AFKSystem(commands.Cog):
     
     @commands.Cog.listener()
     async def on_ready(self):
-        print(f"✅ Cog '{self.__class__.__name__}' is loaded.")
+        #print(f"✅ Cog '{self.__class__.__name__}' is loaded.")
+        pass
 
 def setup(bot):
     bot.add_cog(AFKSystem(bot))

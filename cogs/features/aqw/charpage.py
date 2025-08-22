@@ -4,6 +4,8 @@ from bs4 import BeautifulSoup
 import aiohttp
 import re
 
+# TODO: Fazer badges para o personagem.
+
 class AQChar(commands.Cog):
     def __init__(self, bot):
         self.bot = bot

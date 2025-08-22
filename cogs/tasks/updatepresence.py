@@ -93,4 +93,4 @@ class UpdatePresence(commands.Cog):
 def setup(bot: commands.Bot):
     """Cog setup function"""
     bot.add_cog(UpdatePresence(bot))
-    print("✅ Presence cog loaded")
+    #print("✅ Presence cog loaded")

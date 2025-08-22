@@ -339,6 +339,176 @@ class DatabaseHandler:
 
 
     # ==========================================================
+    # ================== GUILD OPERATIONS ======================
+    # ==========================================================
+
+    def add_guild(self, guild_data: Dict) -> bool:
+        """Add a new guild to the database."""
+        try:
+            with self._get_connection() as conn:
+                cursor = conn.cursor()
+                cursor.execute("""
+                    INSERT INTO guilds (
+                        leader_id, name, motd, tag, level, exp, gold,
+                        capacity, max_capacity
+                    ) VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?)
+                """, (
+                    guild_data.get("leader_id", 0),
+                    guild_data.get("name", "Guild_Name"),
+                    guild_data.get("motd", "Guild Message of the Day"),
+                    guild_data.get("tag", "Guild_Tag"),
+                    guild_data.get("level", 1),
+                    guild_data.get("exp", 0),
+                    guild_data.get("gold", 0),
+                    guild_data.get("capacity", 1),
+                    guild_data.get("max_capacity", 55)
+                ))
+                return True
+        except sqlite3.IntegrityError as e:
+            self.logger.warning(f"Guild already exists or constraint failed: {e}")
+            return False
+        except Exception as e:
+            self.logger.error(f"Error adding guild: {e}", exc_info=True)
+            return False
+
+    def get_guild(self, guild_id: int) -> Optional[Dict]:
+        """Retrieve a guild by ID."""
+        try:
+            with self._get_connection() as conn:
+                cursor = conn.cursor()
+                cursor.execute("SELECT * FROM guilds WHERE id = ?", (guild_id,))
+                result = cursor.fetchone()
+                return dict(result) if result else None
+        except Exception as e:
+            self.logger.error(f"Error getting guild {guild_id}: {e}", exc_info=True)
+            return None
+
+    def update_guild(self, guild_id: int, **kwargs) -> bool:
+        """Update guild fields by ID."""
+        if not kwargs:
+            return False
+
+        try:
+            with self._get_connection() as conn:
+                cursor = conn.cursor()
+                set_clause = ", ".join(f"{k} = ?" for k in kwargs)
+                values = list(kwargs.values()) + [guild_id]
+                cursor.execute(
+                    f"UPDATE guilds SET {set_clause} WHERE id = ?",
+                    values
+                )
+                return cursor.rowcount > 0
+        except Exception as e:
+            self.logger.error(f"Error updating guild {guild_id}: {e}", exc_info=True)
+            return False
+
+    def delete_guild(self, guild_id: int) -> bool:
+        """Delete a guild by ID."""
+        try:
+            with self._get_connection() as conn:
+                cursor = conn.cursor()
+                cursor.execute("DELETE FROM guilds WHERE id = ?", (guild_id,))
+                return cursor.rowcount > 0
+        except Exception as e:
+            self.logger.error(f"Error deleting guild {guild_id}: {e}", exc_info=True)
+            return False
+
+    def list_guilds(self) -> List[Dict]:
+        """Return all guilds."""
+        try:
+            with self._get_connection() as conn:
+                cursor = conn.cursor()
+                cursor.execute("SELECT * FROM guilds")
+                return [dict(row) for row in cursor.fetchall()]
+        except Exception as e:
+            self.logger.error(f"Error listing guilds: {e}", exc_info=True)
+            return []
+
+    # ----------------- CHECK BOSS EXISTS -----------------
+    def check_guild_exists(self, guild_id: int) -> bool:
+        """Check if a guild exists by ID."""
+        try:
+            with self._get_connection() as conn:
+                cursor = conn.cursor()
+                cursor.execute("SELECT 1 FROM guilds WHERE id = ?", (guild_id,))
+                return cursor.fetchone() is not None
+        except Exception as e:
+            self.logger.error(f"Error checking guild {guild_id}: {e}", exc_info=True)
+            return False
+
+
+
+    # ==========================================================
+    # ================ INVENTORY OPERATIONS ===================
+    # ==========================================================
+
+    def add_item(self, item_data: Dict) -> bool:
+        """Add a new item to the database."""
+        try:
+            with self._get_connection() as conn:
+                cursor = conn.cursor()
+                cursor.execute("""
+                    INSERT INTO items (
+                        name, description, is_consumable
+                    ) VALUES (?, ?, ?)
+                """), (
+                    item_data.get("name", "Item_Name"),
+                    item_data.get("description", "Item_Description"),
+                    int(item_data.get("is_consumable", 0))
+                )
+                return True
+        except Exception as e:
+            self.logger.error(f"Error adding item: {e}", exc_info=True)
+            return False
+
+    def add_item_to_user(self, user_id: int, item_id: int, quantity: int = 1) -> bool:
+        """Add an item to a user's inventory."""
+        try:
+            with self._get_connection() as conn:
+                cursor = conn.cursor()
+                # Check if user already has the item
+                cursor.execute("""
+                    SELECT quantity FROM user_inventory
+                    WHERE user_id = ? AND item_id = ?
+                """, (user_id, item_id))
+                result = cursor.fetchone()
+
+                if result:
+                    # Update quantity if item exists
+                    new_quantity = result[0] + quantity
+                    cursor.execute("""
+                        UPDATE user_inventory
+                        SET quantity = ?
+                        WHERE user_id = ? AND item_id = ?
+                    """, (new_quantity, user_id, item_id))
+                else:
+                    # Add new item
+                    cursor.execute("""
+                        INSERT INTO user_inventory (user_id, item_id, quantity)
+                        VALUES (?, ?, ?)
+                    """, (user_id, item_id, quantity))
+                return True
+        except Exception as e:
+            self.logger.error(f"Error adding item to user: {e}", exc_info=True)
+            return False
+
+    def get_user_inventory(self, user_id: int) -> List[Dict]:
+        """Get all items in a user's inventory."""
+        try:
+            with self._get_connection() as conn:
+                cursor = conn.cursor()
+                cursor.execute("""
+                    SELECT i.*, ui.quantity, ui.equiped 
+                    FROM items i
+                    JOIN user_inventory ui ON i.id = ui.item_id
+                    WHERE ui.user_id = ?
+                """, (user_id,))
+                return [dict(row) for row in cursor.fetchall()]
+        except Exception as e:
+            self.logger.error(f"Error getting user inventory: {e}", exc_info=True)
+            return []
+
+    # ==========================================================
     # ================ GENERAL QUERY METHODS ===================
     # ==========================================================
 
