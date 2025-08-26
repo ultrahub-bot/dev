@@ -37,6 +37,7 @@ COGS = [
     "cogs.template.users",
     "cogs.template.bosses",
     "cogs.template.guilds",
+    "cogs.template.raid",
     #"cogs.features.feed.video_monitor",
     #"cogs.template.inventory",
     "cogs.features.fun.afk",

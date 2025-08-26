@@ -36,12 +36,12 @@ class Help(commands.Cog):
     async def about(self, ctx: discord.ApplicationContext):
         """Shows information about the bot"""
         embed = Embed(
-            title="ℹ️ About This Bot",
+            title="ℹ️ Sobre",
             color=Color.blurple()
         )
-        embed.add_field(name="Creator", value="Your Name Here", inline=True)
+        embed.add_field(name="Creator", value="Marcel Pineoak", inline=True)
         embed.add_field(name="Version", value="1.0.0", inline=True)
-        embed.add_field(name="Library", value=f"discord.py {discord.__version__}", inline=True)
+        embed.add_field(name="Library", value=f"pycord.py {discord.__version__}", inline=True)
         embed.add_field(name="Source Code", value="[GitHub Repo](https://github.com/your/repo)", inline=False)
         embed.set_thumbnail(url=self.bot.user.display_avatar.url)
         await ctx.respond(embed=embed)
