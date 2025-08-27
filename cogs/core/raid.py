@@ -702,28 +702,33 @@ class RaidBuilderSystem(commands.Cog):
         
         raid = self.active_raids[raid_id]
         
-        # Redirecionar todos os membros para o canal required
-        required_channel = self.bot.get_channel(REQUIRED_VOICE_CHANNEL_ID)
+        # Redirecionar todos os membros (incluindo o líder) para o canal required
+        required_channel = self.bot.get_channel(REQUIRED_VOICE_CHANNEL_ID)  # Fila de espera
         if required_channel:
-            for user_id in raid['members']:
+            # Combinar os membros + líder em um set (evita duplicatas)
+            all_users = set(raid['members'])
+            if raid.get('leader_id'):
+                all_users.add(raid['leader_id'])
+
+            for user_id in all_users:
                 try:
-                    # Encontrar o membro em todas as guilds
+                    # Procurar o membro em todas as guilds
                     for guild in self.bot.guilds:
                         member = guild.get_member(user_id)
                         if member and member.voice and member.voice.channel:
-                            # Verificar se está em um canal de fila desta raid
+                            # Caso voice queue: só mover se estiver no canal de fila da raid
                             if raid.get('is_voice_queue'):
                                 voice_channel_id = self.voice_queue_channels.get(raid['boss_id'])
                                 if voice_channel_id and member.voice.channel.id == voice_channel_id:
                                     await member.move_to(required_channel)
                                     logger.info(f"User {user_id} moved to required channel")
-                            # Para raids não-voice-queue, mover se estiver em qualquer canal
-                            elif not raid.get('is_voice_queue'):
+                            # Caso não seja voice queue: mover de qualquer canal
+                            else:
                                 await member.move_to(required_channel)
                                 logger.info(f"User {user_id} moved to required channel")
                 except Exception as e:
-                    logger.error(f"Error moving user {user_id} to required channel: {e}")
-        
+                    logger.info(f"Error moving user {user_id} to required channel: {e}")
+
         # Deletar canal de voz se for uma raid de voice queue
         if raid.get('is_voice_queue') and raid['boss_id'] in self.voice_queue_channels:
             voice_channel_id = self.voice_queue_channels[raid['boss_id']]
@@ -774,7 +779,9 @@ class RaidBuilderSystem(commands.Cog):
         
         # Remover da lista ativa
         del self.active_raids[raid_id]
-        logger.info(f"Raid {raid_id} cleaned up from memory")                  
+        logger.info(f"Raid {raid_id} cleaned up from memory")   
+        
+                       
     async def handle_voice_queue_creation(self, interaction: discord.Interaction, boss: Dict):
         """Handler para modo fila de voz - criar canal e raid"""
         boss_id = boss['id']
@@ -830,6 +837,7 @@ class RaidBuilderSystem(commands.Cog):
         try:
             await interaction.user.move_to(voice_channel)
         except:
+            print(f"Failed to move raid leader to voice channel.")
             pass
         
         await interaction.response.send_message(
