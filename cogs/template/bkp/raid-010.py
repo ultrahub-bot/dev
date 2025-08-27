@@ -10,14 +10,14 @@ from typing import List, Dict, Optional, Set
 import json
 import logging
 from database import db
-from config import RAID_CHANNEL_ID, REQUIRED_VOICE_CHANNEL_ID
+from config import RAID_CHANNEL_ID
 
 # Setup logging
 logging.basicConfig(level=logging.INFO)
 logger = logging.getLogger(__name__)
 
 # Constantes
-#REQUIRED_VOICE_CHANNEL_ID = REQUIRED_VOICE_CHANNEL_ID
+REQUIRED_VOICE_CHANNEL_ID = 1406201396054986794
 
 class RaidConfigModal(Modal):
     """Modal para configuração avançada de raid"""

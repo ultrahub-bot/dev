@@ -2,20 +2,20 @@ import os
 import asyncio
 import logging
 from datetime import datetime
-
 import discord
 from discord.ext import commands
-
 import config
-import database  # noqa: F401  # ensure database initializes
+import database 
 
 # ───────────────────────────────
 # Logging configuration
 # ───────────────────────────────
 logging.basicConfig(
-    level=logging.INFO,
+
+    level=logging.INFO, #if config.ENV == "prod" else logging.DEBUG,
     format="%(asctime)s | %(levelname)-8s | %(name)s: %(message)s",
     datefmt="%H:%M:%S",
+
 )
 log = logging.getLogger("main")
 
@@ -39,13 +39,10 @@ COGS = [
     "cogs.template.guilds",
     "cogs.template.raid",
     #"cogs.features.feed.video_monitor",
-    #"cogs.template.inventory",
     "cogs.features.fun.afk",
-    #"cogs.features.fun.radio",
-    # "cogs.template.template",
     "cogs.tasks.updatepresence",
     "cogs.events.on_user_join_server",
-    # "cogs.events.on_user_leave_server",
+    # "cogs.template.template",                 # Desabilite para ver os templates em ação
 ]
 
 
@@ -74,7 +71,6 @@ async def on_ready() -> None:
     log.info("――――――――――――――――――――――――――――――――――――――――――")
     log.info(f"✅ Bot connected as {bot.user} (ID: {bot.user.id})")
     log.info("――――――――――――――――――――――――――――――――――――――――――")
-
 
 
 # ───────────────────────────────

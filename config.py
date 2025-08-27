@@ -83,6 +83,8 @@ GUILD_CHAT_CHANNEL_ID = get_setting("GUILD_CHAT_CHANNEL_ID", cast_type=int)
 GUILD_BAN_CHANNEL_ID = get_setting("GUILD_BAN_CHANNEL_ID", cast_type=int)
 GUILD_LOG_CHANNEL_ID = get_setting("GUILD_LOG_CHANNEL_ID", cast_type=int)
 
+# VOICE
+REQUIRED_VOICE_CHANNEL_ID = get_setting("REQUIRED_VOICE_CHANNEL_ID", cast_type=int)
 
 # ==================================================================================================
 # DIRETÓRIOS
