@@ -7,7 +7,9 @@ import json
 load_dotenv()
 
 # Carrega configurações do YAML
-SETTINGS_PATH = Path("settings.yaml")
+#SETTINGS_PATH = Path("settings_test.yaml") # ULTRAHUB LABS
+SETTINGS_PATH = Path("settings.yaml")       # ULTRAHUB
+
 if SETTINGS_PATH.exists():
     with open(SETTINGS_PATH, "r", encoding="utf-8") as f:
         bot_settings = yaml.safe_load(f)
