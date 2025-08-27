@@ -34,15 +34,15 @@ COGS = [
     "cogs.features.aqw.vincular",
     "cogs.features.aqw.servers",
     "cogs.features.aqw.charpage",
-    "cogs.template.users",
-    "cogs.template.bosses",
-    "cogs.template.guilds",
-    "cogs.template.raid",
+    "cogs.core.users",
+    "cogs.core.bosses",
+    "cogs.core.guilds",
+    "cogs.core.raid",
     #"cogs.features.feed.video_monitor",
     "cogs.features.fun.afk",
     "cogs.tasks.updatepresence",
     "cogs.events.on_user_join_server",
-    # "cogs.template.template",                 # Desabilite para ver os templates em ação
+    # "cogs.core.template",                 # Desabilite para ver os templates em ação
 ]
 
 
